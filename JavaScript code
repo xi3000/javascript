@@ -1,27 +1,14 @@
-/**
- * DEOBFUSCATED JAVASCRIPT SOURCE CODE
- * Original: Heavily obfuscated browser extension code
- * Components: WAV Encoder + Browser Detection + Extension API Wrapper
- * Deobfuscated by: Advanced AST Analysis
- */
-
-// ================================
-// PART 1: WAV AUDIO ENCODER MODULE
-// ================================
-
 (function() {
     "use strict";
     
     var audioModules = {
         4665: function(module) {
-            // Helper function to write string to DataView
             function writeString(dataView, offset, string) {
                 for (var i = 0; i < string.length; i++) {
                     dataView.setUint8(offset + i, string.charCodeAt(i));
                 }
             }
             
-            // Main WAV encoding function
             module.exports = function(audioBuffer, options) {
                 options = options || {};
                 
@@ -36,7 +23,6 @@
                     var buffer = new ArrayBuffer(44 + audioData.length * bytesPerSample);
                     var dataView = new DataView(buffer);
                     
-                    // WAV Header
                     writeString(dataView, 0, "RIFF");
                     dataView.setUint32(4, 36 + audioData.length * bytesPerSample, true);
                     writeString(dataView, 8, "WAVE");
@@ -51,15 +37,12 @@
                     writeString(dataView, 36, "data");
                     dataView.setUint32(40, audioData.length * bytesPerSample, true);
                     
-                    // Audio Data
                     if (format === 1) {
-                        // PCM 16-bit
                         for (var i = 0, offset = 44; i < audioData.length; i++, offset += 2) {
                             var sample = Math.max(-1, Math.min(1, audioData[i]));
                             dataView.setInt16(offset, sample < 0 ? sample * 32768 : sample * 32767, true);
                         }
                     } else {
-                        // Float32
                         for (var i = 0, offset = 44; i < audioData.length; i++, offset += 4) {
                             dataView.setFloat32(offset, audioData[i], true);
                         }
@@ -67,7 +50,6 @@
                     
                     return buffer;
                 }(
-                    // Interleave channels if stereo
                     numberOfChannels === 2 ? 
                         function(leftChannel, rightChannel) {
                             var length = leftChannel.length + rightChannel.length;
@@ -90,10 +72,6 @@
                 );
             };
         },
-        
-        // ================================
-        // PART 2: MODULE LOADER SYSTEM
-        // ================================
         
         9033: function(module) {
             module.exports = function(modules) {
@@ -158,9 +136,6 @@
                 
                 return require(require.startModule = 90);
             }({
-                // ================================
-                // PART 3: BROWSER DETECTION UTILS
-                // ================================
                 
                 17: function(module, exports, require) {
                     "use strict";
@@ -349,10 +324,6 @@
                     module.exports = exports.default;
                 },
                 
-                // ================================
-                // PART 4: BROWSER/OS CONSTANTS
-                // ================================
-                
                 18: function(module, exports, require) {
                     "use strict";
                     
@@ -475,10 +446,6 @@
                     };
                 },
                 
-                // ================================
-                // PART 5: MAIN BOWSER CLASS
-                // ================================
-                
                 90: function(module, exports, require) {
                     "use strict";
                     
@@ -523,10 +490,6 @@
                     exports.default = Bowser;
                     module.exports = exports.default;
                 },
-                
-                // ================================
-                // PART 6: BROWSER DETECTION PARSER
-                // ================================
                 
                 91: function(module, exports, require) {
                     "use strict";
