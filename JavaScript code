@@ -1,0 +1,3706 @@
+(() = >  {
+  var var0 =  {
+    4665:var0 = >  {
+      function var1(var0,var1,var2) {
+        var3(var var4 = 0;
+        var4 < var2.length;
+        var4 + + )var0.setUint8(var1 + var4,var2.charCodeAt(var4))
+      }
+      var0.exports = function(var0,var2) {
+        var2 = var2 | |  {
+          
+        }
+        ;
+        var var4 = var0.numberOfChannels,var5 = var0.sampleRate,var6 = var2.float32?3:1,var7 = 3 = = = var6?32:16;
+        return function(var0,var2,var4,var5,var6) {
+          var var7 = var6 / 8,var8 = var5 * var7,var9 = var10 ArrayBuffer(44 + var0.length * var7),var11 = var10 DataView(var9);
+          return var1(var11,0,"RIFF"),var11.setUint32(4,36 + var0.length * var7, ! 0),var1(var11,8,"WAVE"),var1(var11,12,"var12 "),var11.setUint32(16,16, ! 0),var11.setUint16(20,var2, ! 0),var11.setUint16(22,var5, ! 0),var11.setUint32(24,var4, ! 0),var11.setUint32(28,var4 * var8, ! 0),var11.setUint16(32,var8, ! 0),var11.setUint16(34,var6, ! 0),var1(var11,36,"data"),var11.setUint32(40,var0.length * var7, ! 0),1 = = = var2?function(var0,var1,var2) {
+            var3(var var4 = 0;
+            var4 < var2.length;
+            var4 + + ,var1 + = 2) {
+              var var5 = Math.var13( - 1,Math.var14(1,var2[var4]));
+              var0.setInt16(var1,var5 < 0?32768 * var5:32767 * var5, ! 0)
+            }
+            
+          }
+          (var11,44,var0):function(var0,var1,var2) {
+            var3(var var4 = 0;
+            var4 < var2.length;
+            var4 + + ,var1 + = 4)var0.setFloat32(var1,var2[var4], ! 0)
+          }
+          (var11,44,var0),var9
+        }
+        (2 = = = var4?function(var0,var1) {
+          var3(var var2 = var0.length + var1.length,var4 = var10 Float32Array(var2),var5 = 0,var6 = 0;
+          var5 < var2;
+          )var4[var5 + + ] = var0[var6],var4[var5 + + ] = var1[var6],var6 + + ;
+          return var4
+        }
+        (var0.getChannelData(0),var0.getChannelData(1)):var0.getChannelData(0),var6,var5,var4,var7)
+      }
+      
+    }
+    ,9033:function(var0) {
+      var0.exports = function(var0) {
+        var var1 =  {
+          
+        }
+        ;
+        function var2(var4) {
+          var15(var1[var4])return var1[var4].exports;
+          var var5 = var1[var4] =  {
+            var6:var4,var16: ! 1,exports: {
+              
+            }
+            
+          }
+          ;
+          return var0[var4].call(var5.exports,var5,var5.exports,var2),var5.var16 = ! 0,var5.exports
+        }
+        return var2.var17 = var0,var2.var11 = var1,var2.var18 = function(var0,var1,var4) {
+          var2.var7(var0,var1) | | Object.defineProperty(var0,var1, {
+            enumerable: ! 0,var19:var4
+          }
+          )
+        }
+        ,var2.var2 = function(var0) {
+          "undefined" ! = typeof Symbol & & Symbol.toStringTag & & Object.defineProperty(var0,Symbol.toStringTag, {
+            value:"Module"
+          }
+          ),Object.defineProperty(var0,"__esModule", {
+            value: ! 0
+          }
+          )
+        }
+        ,var2.var1 = function(var0,var1) {
+          var15(1 & var1 & & (var0 = var2(var0)),8 & var1)return var0;
+          var15(4 & var1 & & "object" = = typeof var0 & & var0 & & var0.__esModule)return var0;
+          var var4 = Object.create(null);
+          var15(var2.var2(var4),Object.defineProperty(var4,"default", {
+            enumerable: ! 0,value:var0
+          }
+          ),2 & var1 & & "string" ! = typeof var0)var3(var var5 var20 var0)var2.var18(var4,var5,function(var1) {
+            return var0[var1]
+          }
+          .bind(null,var5));
+          return var4
+        }
+        ,var2.var4 = function(var0) {
+          var var1 = var0 & & var0.__esModule?function() {
+            return var0.default
+          }
+          :function() {
+            return var0
+          }
+          ;
+          return var2.var18(var1,"var8",var1),var1
+        }
+        ,var2.var7 = function(var0,var1) {
+          return Object.prototype.hasOwnProperty.call(var0,var1)
+        }
+        ,var2.var21 = "",var2(var2.var5 = 90)
+      }
+      ( {
+        17:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4 = var2(18),var5 = function() {
+            function var0() {
+              
+            }
+            return var0.getFirstMatch = function(var0,var1) {
+              var var2 = var1.match(var0);
+              return var2 & & var2.length > 0 & & var2[1] | | ""
+            }
+            ,var0.getSecondMatch = function(var0,var1) {
+              var var2 = var1.match(var0);
+              return var2 & & var2.length > 1 & & var2[2] | | ""
+            }
+            ,var0.matchAndReturnConst = function(var0,var1,var2) {
+              var15(var0.test(var1))return var2
+            }
+            ,var0.getWindowsVersionName = function(var0) {
+              switch(var0) {
+                case"var23":return"var23";
+                case"var24":case"var23 5.1":return"var24";
+                case"var23 5.0":return"2000";
+                case"var23 5.2":return"2003";
+                case"var23 6.0":return"Vista";
+                case"var23 6.1":return"7";
+                case"var23 6.2":return"8";
+                case"var23 6.3":return"8.1";
+                case"var23 10.0":return"10";
+                default:return
+              }
+              
+            }
+            ,var0.getMacOSVersionName = function(var0) {
+              var var1 = var0.split(".").splice(0,2).var25((function(var0) {
+                return parseInt(var0,10) | | 0
+              }
+              ));
+              var15(var1.push(0),10 = = = var1[0])switch(var1[1]) {
+                case 5:return"Leopard";
+                case 6:return"Snow Leopard";
+                case 7:return". * '";
+                case 8:return"Mountain Lion";
+                case 9:return"Mavericks";
+                case 10:return"Yosemite";
+                case 11:return"var26 Capitan";
+                case 12:return"Sierra";
+                case 13:return"High Sierra";
+                case 14:return"Mojave";
+                case 15:return"Catalina";
+                default:return
+              }
+              
+            }
+            ,var0.getAndroidVersionName = function(var0) {
+              var var1 = var0.split(".").splice(0,2).var25((function(var0) {
+                return parseInt(var0,10) | | 0
+              }
+              ));
+              var15(var1.push(0), ! (1 = = = var1[0] & & var1[1] < 5))return 1 = = = var1[0] & & var1[1] < 6?"Cupcake":1 = = = var1[0] & & var1[1] > = 6?"Donut":2 = = = var1[0] & & var1[1] < 2?"Eclair":2 = = = var1[0] & & 2 = = = var1[1]?"Froyo":2 = = = var1[0] & & var1[1] > 2?"Gingerbread":3 = = = var1[0]?"Honeycomb":4 = = = var1[0] & & var1[1] < 1?"var27 Cream Sandwich":4 = = = var1[0] & & var1[1] < 4?"Jelly Bean":4 = = = var1[0] & & var1[1] > = 4?" * + var28":5 = = = var1[0]?"Lollipop":6 = = = var1[0]?"Marshmallow":7 = = = var1[0]?"Nougat":8 = = = var1[0]?"Oreo":9 = = = var1[0]?"var29":void 0
+            }
+            ,var0.getVersionPrecision = function(var0) {
+              return var0.split(".").length
+            }
+            ,var0.compareVersions = function(var1,var2,var4) {
+              void 0 = = = var4 & & (var4 = ! 1);
+              var var5 = var0.getVersionPrecision(var1),var6 = var0.getVersionPrecision(var2),var7 = Math.var13(var5,var6),var8 = 0,var9 = var0.var25([var1,var2],(function(var1) {
+                var var2 = var7 - var0.getVersionPrecision(var1),var4 = var1 + var10 Array(var2 + 1).join(".0");
+                return var0.var25(var4.split("."),(function(var0) {
+                  return var10 Array(20 - var0.length).join("0") + var0
+                }
+                )).reverse()
+              }
+              ));
+              var3(var4 & & (var8 = var7 - Math.var14(var5,var6)),var7 - = 1;
+              var7 > = var8;
+              ) {
+                var15(var9[0][var7] > var9[1][var7])return 1;
+                var15(var9[0][var7] = = = var9[1][var7]) {
+                  var15(var7 = = = var8)return 0;
+                  var7 - = 1
+                }
+                else var15(var9[0][var7] < var9[1][var7])return - 1
+              }
+              
+            }
+            ,var0.var25 = function(var0,var1) {
+              var var2,var4 = [];
+              var15(Array.prototype.var25)return Array.prototype.var25.call(var0,var1);
+              var3(var2 = 0;
+              var2 < var0.length;
+              var2 + = 1)var4.push(var1(var0[var2]));
+              return var4
+            }
+            ,var0.find = function(var0,var1) {
+              var var2,var4;
+              var15(Array.prototype.find)return Array.prototype.find.call(var0,var1);
+              var3(var2 = 0,var4 = var0.length;
+              var2 < var4;
+              var2 + = 1) {
+                var var5 = var0[var2];
+                var15(var1(var5,var2))return var5
+              }
+              
+            }
+            ,var0.assign = function(var0) {
+              var3(var var1,var2,var4 = var0,var5 = arguments.length,var6 = var10 Array(var5 > 1?var5 - 1:0),var7 = 1;
+              var7 < var5;
+              var7 + + )var6[var7 - 1] = arguments[var7];
+              var15(Object.assign)return Object.assign.apply(Object,[var0].concat(var6));
+              var var8 = function() {
+                var var0 = var6[var1];
+                "object" = = typeof var0 & & null ! = = var0 & & Object.keys(var0).forEach((function(var1) {
+                  var4[var1] = var0[var1]
+                }
+                ))
+              }
+              ;
+              var3(var1 = 0,var2 = var6.length;
+              var1 < var2;
+              var1 + = 1)var8();
+              return var0
+            }
+            ,var0.getBrowserAlias = function(var0) {
+              return var4.BROWSER_ALIASES_MAP[var0]
+            }
+            ,var0.getBrowserTypeByAlias = function(var0) {
+              return var4.BROWSER_MAP[var0] | | ""
+            }
+            ,var0
+          }
+          ();
+          var1.default = var5,var0.exports = var1.default
+        }
+        ,18:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.ENGINE_MAP = var1.OS_MAP = var1.PLATFORMS_MAP = var1.BROWSER_MAP = var1.BROWSER_ALIASES_MAP = void 0,var1.BROWSER_ALIASES_MAP =  {
+            "Amazon Silk":"amazon_silk","Android Browser":"android",Bada:"bada",BlackBerry:"blackberry",Chrome:"chrome",Chromium:"chromium",Electron:"electron",Epiphany:"epiphany",Firefox:"firefox",Focus:"focus",Generic:"generic","Google Search":"google_search",Googlebot:"googlebot","Internet Explorer":"var30","var31 - Meleon":"k_meleon",Maxthon:"maxthon","Microsoft Edge":"edge","var32 Browser":"var33","NAVER Whale Browser":"naver",Opera:"opera","Opera Coast":"opera_coast",PhantomJS:"phantomjs",Puffin:"puffin",QupZilla:"qupzilla",var34:"var35",QQLite:"qqlite",Safari:"safari",Sailfish:"sailfish","Samsung Internet var3 Android":"samsung_internet",SeaMonkey:"seamonkey",Sleipnir:"sleipnir",Swing:"swing",Tizen:"tizen","var36 Browser":"var37",Vivaldi:"vivaldi","WebOS Browser":"webos",WeChat:"wechat","Yandex Browser":"yandex",Roku:"roku"
+          }
+          ,var1.BROWSER_MAP =  {
+            amazon_silk:"Amazon Silk",android:"Android Browser",bada:"Bada",blackberry:"BlackBerry",chrome:"Chrome",chromium:"Chromium",electron:"Electron",epiphany:"Epiphany",firefox:"Firefox",focus:"Focus",generic:"Generic",googlebot:"Googlebot",google_search:"Google Search",var30:"Internet Explorer",k_meleon:"var31 - Meleon",maxthon:"Maxthon",edge:"Microsoft Edge",var33:"var32 Browser",naver:"NAVER Whale Browser",opera:"Opera",opera_coast:"Opera Coast",phantomjs:"PhantomJS",puffin:"Puffin",qupzilla:"QupZilla",var35:"var34 Browser",qqlite:"var34 Browser Lite",safari:"Safari",sailfish:"Sailfish",samsung_internet:"Samsung Internet var3 Android",seamonkey:"SeaMonkey",sleipnir:"Sleipnir",swing:"Swing",tizen:"Tizen",var37:"var36 Browser",vivaldi:"Vivaldi",webos:"WebOS Browser",wechat:"WeChat",yandex:"Yandex Browser"
+          }
+          ,var1.PLATFORMS_MAP =  {
+            tablet:"tablet",mobile:"mobile",desktop:"desktop",var38:"var38"
+          }
+          ,var1.OS_MAP =  {
+            WindowsPhone:"Windows Phone",Windows:"Windows",MacOS:"macOS",var39:"var39",Android:"Android",WebOS:"WebOS",BlackBerry:"BlackBerry",Bada:"Bada",Tizen:"Tizen",Linux:"Linux",ChromeOS:"Chrome var40",PlayStation4:"PlayStation 4",Roku:"Roku"
+          }
+          ,var1.ENGINE_MAP =  {
+            EdgeHTML:"EdgeHTML",Blink:"Blink",Trident:"Trident",Presto:"Presto",Gecko:"Gecko",WebKit:"WebKit"
+          }
+          
+        }
+        ,90:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4,var5 = (var4 = var2(91)) & & var4.__esModule?var4: {
+            default:var4
+          }
+          ,var6 = var2(18);
+          function var7(var0,var1) {
+            var3(var var2 = 0;
+            var2 < var1.length;
+            var2 + + ) {
+              var var4 = var1[var2];
+              var4.enumerable = var4.enumerable | | ! 1,var4.configurable = ! 0,"value"var20 var4 & & (var4.writable = ! 0),Object.defineProperty(var0,var4.var41,var4)
+            }
+            
+          }
+          var var8 = function() {
+            function var0() {
+              
+            }
+            var var1,var2;
+            return var0.getParser = function(var0,var1) {
+              var15(void 0 = = = var1 & & (var1 = ! 1),"string" ! = typeof var0)throw var10 Error("UserAgent should var42 var8 string");
+              return var10 var5.default(var0,var1)
+            }
+            ,var0.parse = function(var0) {
+              return var10 var5.default(var0).getResult()
+            }
+            ,var1 = var0,var2 = [ {
+              var41:"BROWSER_MAP",var19:function() {
+                return var6.BROWSER_MAP
+              }
+              
+            }
+            , {
+              var41:"ENGINE_MAP",var19:function() {
+                return var6.ENGINE_MAP
+              }
+              
+            }
+            , {
+              var41:"OS_MAP",var19:function() {
+                return var6.OS_MAP
+              }
+              
+            }
+            , {
+              var41:"PLATFORMS_MAP",var19:function() {
+                return var6.PLATFORMS_MAP
+              }
+              
+            }
+            ],null & & var7(var1.prototype,null),var2 & & var7(var1,var2),var0
+          }
+          ();
+          var1.default = var8,var0.exports = var1.default
+        }
+        ,91:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4 = var9(var2(92)),var5 = var9(var2(93)),var6 = var9(var2(94)),var7 = var9(var2(95)),var8 = var9(var2(17));
+          function var9(var0) {
+            return var0 & & var0.__esModule?var0: {
+              default:var0
+            }
+            
+          }
+          var var11 = function() {
+            function var0(var0,var1) {
+              var15(void 0 = = = var1 & & (var1 = ! 1),null = = var0 | | "" = = = var0)throw var10 Error("UserAgent parameter var43'var1 var42 empty");
+              this.var44 = var0,this.parsedResult =  {
+                
+              }
+              , ! 0 ! = = var1 & & this.parse()
+            }
+            var var1 = var0.prototype;
+            return var1.getUA = function() {
+              return this.var44
+            }
+            ,var1.test = function(var0) {
+              return var0.test(this.var44)
+            }
+            ,var1.parseBrowser = function() {
+              var var0 = this;
+              this.parsedResult.browser =  {
+                
+              }
+              ;
+              var var1 = var8.default.find(var4.default,(function(var1) {
+                var15("function" = = typeof var1.test)return var1.test(var0);
+                var15(var1.test instanceof Array)return var1.test.some((function(var1) {
+                  return var0.test(var1)
+                }
+                ));
+                throw var10 Error("Browser'var5 test function var45 var46 valid")
+              }
+              ));
+              return var1 & & (this.parsedResult.browser = var1.describe(this.getUA())),this.parsedResult.browser
+            }
+            ,var1.getBrowser = function() {
+              return this.parsedResult.browser?this.parsedResult.browser:this.parseBrowser()
+            }
+            ,var1.getBrowserName = function(var0) {
+              return var0?String(this.getBrowser().name).toLowerCase() | | "":this.getBrowser().name | | ""
+            }
+            ,var1.getBrowserVersion = function() {
+              return this.getBrowser().version
+            }
+            ,var1.getOS = function() {
+              return this.parsedResult.var47?this.parsedResult.var47:this.parseOS()
+            }
+            ,var1.parseOS = function() {
+              var var0 = this;
+              this.parsedResult.var47 =  {
+                
+              }
+              ;
+              var var1 = var8.default.find(var5.default,(function(var1) {
+                var15("function" = = typeof var1.test)return var1.test(var0);
+                var15(var1.test instanceof Array)return var1.test.some((function(var1) {
+                  return var0.test(var1)
+                }
+                ));
+                throw var10 Error("Browser'var5 test function var45 var46 valid")
+              }
+              ));
+              return var1 & & (this.parsedResult.var47 = var1.describe(this.getUA())),this.parsedResult.var47
+            }
+            ,var1.getOSName = function(var0) {
+              var var1 = this.getOS().name;
+              return var0?String(var1).toLowerCase() | | "":var1 | | ""
+            }
+            ,var1.getOSVersion = function() {
+              return this.getOS().version
+            }
+            ,var1.getPlatform = function() {
+              return this.parsedResult.platform?this.parsedResult.platform:this.parsePlatform()
+            }
+            ,var1.getPlatformType = function(var0) {
+              void 0 = = = var0 & & (var0 = ! 1);
+              var var1 = this.getPlatform().type;
+              return var0?String(var1).toLowerCase() | | "":var1 | | ""
+            }
+            ,var1.parsePlatform = function() {
+              var var0 = this;
+              this.parsedResult.platform =  {
+                
+              }
+              ;
+              var var1 = var8.default.find(var6.default,(function(var1) {
+                var15("function" = = typeof var1.test)return var1.test(var0);
+                var15(var1.test instanceof Array)return var1.test.some((function(var1) {
+                  return var0.test(var1)
+                }
+                ));
+                throw var10 Error("Browser'var5 test function var45 var46 valid")
+              }
+              ));
+              return var1 & & (this.parsedResult.platform = var1.describe(this.getUA())),this.parsedResult.platform
+            }
+            ,var1.getEngine = function() {
+              return this.parsedResult.engine?this.parsedResult.engine:this.parseEngine()
+            }
+            ,var1.getEngineName = function(var0) {
+              return var0?String(this.getEngine().name).toLowerCase() | | "":this.getEngine().name | | ""
+            }
+            ,var1.parseEngine = function() {
+              var var0 = this;
+              this.parsedResult.engine =  {
+                
+              }
+              ;
+              var var1 = var8.default.find(var7.default,(function(var1) {
+                var15("function" = = typeof var1.test)return var1.test(var0);
+                var15(var1.test instanceof Array)return var1.test.some((function(var1) {
+                  return var0.test(var1)
+                }
+                ));
+                throw var10 Error("Browser'var5 test function var45 var46 valid")
+              }
+              ));
+              return var1 & & (this.parsedResult.engine = var1.describe(this.getUA())),this.parsedResult.engine
+            }
+            ,var1.parse = function() {
+              return this.parseBrowser(),this.parseOS(),this.parsePlatform(),this.parseEngine(),this
+            }
+            ,var1.getResult = function() {
+              return var8.default.assign( {
+                
+              }
+              ,this.parsedResult)
+            }
+            ,var1.satisfies = function(var0) {
+              var var1 = this,var2 =  {
+                
+              }
+              ,var4 = 0,var5 =  {
+                
+              }
+              ,var6 = 0;
+              var15(Object.keys(var0).forEach((function(var1) {
+                var var7 = var0[var1];
+                "string" = = typeof var7?(var5[var1] = var7,var6 + = 1):"object" = = typeof var7 & & (var2[var1] = var7,var4 + = 1)
+              }
+              )),var4 > 0) {
+                var var7 = Object.keys(var2),var9 = var8.default.find(var7,(function(var0) {
+                  return var1.isOS(var0)
+                }
+                ));
+                var15(var9) {
+                  var var11 = this.satisfies(var2[var9]);
+                  var15(void 0 ! = = var11)return var11
+                }
+                var var16 = var8.default.find(var7,(function(var0) {
+                  return var1.isPlatform(var0)
+                }
+                ));
+                var15(var16) {
+                  var var18 = this.satisfies(var2[var16]);
+                  var15(void 0 ! = = var18)return var18
+                }
+                
+              }
+              var15(var6 > 0) {
+                var var48 = Object.keys(var5),var49 = var8.default.find(var48,(function(var0) {
+                  return var1.isBrowser(var0, ! 0)
+                }
+                ));
+                var15(void 0 ! = = var49)return this.compareVersion(var5[var49])
+              }
+              
+            }
+            ,var1.isBrowser = function(var0,var1) {
+              void 0 = = = var1 & & (var1 = ! 1);
+              var var2 = this.getBrowserName().toLowerCase(),var4 = var0.toLowerCase(),var5 = var8.default.getBrowserTypeByAlias(var4);
+              return var1 & & var5 & & (var4 = var5.toLowerCase()),var4 = = = var2
+            }
+            ,var1.compareVersion = function(var0) {
+              var var1 = [0],var2 = var0,var4 = ! 1,var5 = this.getBrowserVersion();
+              var15("string" = = typeof var5)return" > " = = = var0[0] | | " < " = = = var0[0]?(var2 = var0.substr(1)," = " = = = var0[1]?(var4 = ! 0,var2 = var0.substr(2)):var1 = []," > " = = = var0[0]?var1.push(1):var1.push( - 1)):" = " = = = var0[0]?var2 = var0.substr(1):"~" = = = var0[0] & & (var4 = ! 0,var2 = var0.substr(1)),var1.indexOf(var8.default.compareVersions(var5,var2,var4)) > - 1
+            }
+            ,var1.isOS = function(var0) {
+              return this.getOSName( ! 0) = = = String(var0).toLowerCase()
+            }
+            ,var1.isPlatform = function(var0) {
+              return this.getPlatformType( ! 0) = = = String(var0).toLowerCase()
+            }
+            ,var1.isEngine = function(var0) {
+              return this.getEngineName( ! 0) = = = String(var0).toLowerCase()
+            }
+            ,var1.var45 = function(var0,var1) {
+              return void 0 = = = var1 & & (var1 = ! 1),this.isBrowser(var0,var1) | | this.isOS(var0) | | this.isPlatform(var0)
+            }
+            ,var1.some = function(var0) {
+              var var1 = this;
+              return void 0 = = = var0 & & (var0 = []),var0.some((function(var0) {
+                return var1.var45(var0)
+              }
+              ))
+            }
+            ,var0
+          }
+          ();
+          var1.default = var11,var0.exports = var1.default
+        }
+        ,92:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4,var5 = (var4 = var2(17)) & & var4.__esModule?var4: {
+            default:var4
+          }
+          ,var6 = / version\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var7 = [ {
+            test:[ / googlebot / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Googlebot"
+              }
+              ,var2 = var5.default.getFirstMatch( / googlebot\ / (\var18 + (\.\var18 + )) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / opera / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Opera"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:opera)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / var51\ / | opios / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Opera"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:var51 | opios)[\var5 / ](\var52 + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / SamsungBrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Samsung Internet var3 Android"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:SamsungBrowser)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / Whale / var6],describe:function(var0) {
+              var var1 =  {
+                name:"NAVER Whale Browser"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:whale)[\var5 / ](\var18 + (?:\.\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / MZBrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name:"var32 Browser"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:MZBrowser)[\var5 / ](\var18 + (?:\.\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / focus / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Focus"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:focus)[\var5 / ](\var18 + (?:\.\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / swing / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Swing"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:swing)[\var5 / ](\var18 + (?:\.\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / coast / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Opera Coast"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:coast)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / var53\ / \var18 + (?:.?var50?\var18 + ) + / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Opera Touch"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:var53)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / yabrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Yandex Browser"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:yabrowser)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / ucbrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name:"var36 Browser"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:ucbrowser)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / Maxthon | mxios / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Maxthon"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:Maxthon | mxios)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / epiphany / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Epiphany"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:epiphany)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / puffin / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Puffin"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:puffin)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / sleipnir / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Sleipnir"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:sleipnir)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / var54 - meleon / var6],describe:function(var0) {
+              var var1 =  {
+                name:"var31 - Meleon"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / (?:var54 - meleon)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / micromessenger / var6],describe:function(var0) {
+              var var1 =  {
+                name:"WeChat"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:micromessenger)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / qqbrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name: / qqbrowserlite / var6.test(var0)?"var34 Browser Lite":"var34 Browser"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:qqbrowserlite | qqbrowser)[ / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / msie | trident / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Internet Explorer"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:msie | var55:)(\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / \sedg\ / / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Microsoft Edge"
+              }
+              ,var2 = var5.default.getFirstMatch( / \sedg\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / var56([var57] | var58) / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Microsoft Edge"
+              }
+              ,var2 = var5.default.getSecondMatch( / var56([var57] | var58)\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / vivaldi / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Vivaldi"
+              }
+              ,var2 = var5.default.getFirstMatch( / vivaldi\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / seamonkey / var6],describe:function(var0) {
+              var var1 =  {
+                name:"SeaMonkey"
+              }
+              ,var2 = var5.default.getFirstMatch( / seamonkey\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / sailfish / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Sailfish"
+              }
+              ,var2 = var5.default.getFirstMatch( / sailfish\var5?browser\ / (\var18 + (\.\var18 + )?) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / silk / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Amazon Silk"
+              }
+              ,var2 = var5.default.getFirstMatch( / silk\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / phantom / var6],describe:function(var0) {
+              var var1 =  {
+                name:"PhantomJS"
+              }
+              ,var2 = var5.default.getFirstMatch( / phantomjs\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / slimerjs / var6],describe:function(var0) {
+              var var1 =  {
+                name:"SlimerJS"
+              }
+              ,var2 = var5.default.getFirstMatch( / slimerjs\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / blackberry | \var59\var18 + / var6, / var60\stablet / var6],describe:function(var0) {
+              var var1 =  {
+                name:"BlackBerry"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / blackberry[\var18] + \ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / (var61 | var62)[var63]var5 / var6],describe:function(var0) {
+              var var1 =  {
+                name:"WebOS Browser"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0) | | var5.default.getFirstMatch( / var64(?:var65)?[var63]sbrowser\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / bada / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Bada"
+              }
+              ,var2 = var5.default.getFirstMatch( / dolfin\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / tizen / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Tizen"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:tizen\var5?)?browser\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / qupzilla / var6],describe:function(var0) {
+              var var1 =  {
+                name:"QupZilla"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:qupzilla)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / firefox | iceweasel | fxios / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Firefox"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:firefox | iceweasel | fxios)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / electron / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Electron"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:electron)\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / MiuiBrowser / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Miui"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:MiuiBrowser)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / chromium / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Chromium"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:chromium)[\var5 / ](\var18 + (\.?var50?\var18 + ) + ) / var6,var0) | | var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / chrome | crios | crmo / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Chrome"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:chrome | crios | crmo)\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / var66 / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Google Search"
+              }
+              ,var2 = var5.default.getFirstMatch( / (?:var66)\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              var var1 = ! var0.test( / like android / var6),var2 = var0.test( / android / var6);
+              return var1 & & var2
+            }
+            ,describe:function(var0) {
+              var var1 =  {
+                name:"Android Browser"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / playstation 4 / var6],describe:function(var0) {
+              var var1 =  {
+                name:"PlayStation 4"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / safari | applewebkit / var6],describe:function(var0) {
+              var var1 =  {
+                name:"Safari"
+              }
+              ,var2 = var5.default.getFirstMatch(var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / . * / var6],describe:function(var0) {
+              var var1 = - 1 ! = = var0.search("\\(")? / ^ (. * )\ / (. * )[ \var1]\((. * ) / : / ^ (. * )\ / (. * ) / ;
+              return {
+                name:var5.default.getFirstMatch(var1,var0),version:var5.default.getSecondMatch(var1,var0)
+              }
+              
+            }
+            
+          }
+          ];
+          var1.default = var7,var0.exports = var1.default
+        }
+        ,93:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4,var5 = (var4 = var2(17)) & & var4.__esModule?var4: {
+            default:var4
+          }
+          ,var6 = var2(18),var7 = [ {
+            test:[ / Roku\ / var67 / ],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / Roku\ / var67 - (\var18 + \.\var18 + ) / var6,var0);
+              return {
+                name:var6.OS_MAP.Roku,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / windows phone / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / windows phone (?:var47)?\var5?(\var18 + (\.\var18 + ) * ) / var6,var0);
+              return {
+                name:var6.OS_MAP.WindowsPhone,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / windows / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / Windows ((var23 | var24)( \var18\var18?.\var18)?) / var6,var0),var2 = var5.default.getWindowsVersionName(var1);
+              return {
+                name:var6.OS_MAP.Windows,version:var1,versionName:var2
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / Macintosh(. * ?) FxiOS(. * ?)\ / / ],describe:function(var0) {
+              var var1 =  {
+                name:var6.OS_MAP.var39
+              }
+              ,var2 = var5.default.getSecondMatch( / (Version\ / )(\var18[\var18.] + ) / ,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / macintosh / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / var68 var47 var69 (\var18 + (\.?var50?\var18 + ) + ) / var6,var0).replace( / [var50\var5] / var48,"."),var2 = var5.default.getMacOSVersionName(var1),var4 =  {
+                name:var6.OS_MAP.MacOS,version:var1
+              }
+              ;
+              return var2 & & (var4.versionName = var2),var4
+            }
+            
+          }
+          , {
+            test:[ / (ipod | iphone | ipad) / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / var47 (\var18 + ([var50\var5]\var18 + ) * ) like var68 var47 var69 / var6,var0).replace( / [var50\var5] / var48,".");
+              return {
+                name:var6.OS_MAP.var39,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              var var1 = ! var0.test( / like android / var6),var2 = var0.test( / android / var6);
+              return var1 & & var2
+            }
+            ,describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / android[\var5 / - ](\var18 + (\.\var18 + ) * ) / var6,var0),var2 = var5.default.getAndroidVersionName(var1),var4 =  {
+                name:var6.OS_MAP.Android,version:var1
+              }
+              ;
+              return var2 & & (var4.versionName = var2),var4
+            }
+            
+          }
+          , {
+            test:[ / (var61 | var62)[var63]var5 / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / (?:var61 | var62)[var63]var5\ / (\var18 + (\.\var18 + ) * ) / var6,var0),var2 =  {
+                name:var6.OS_MAP.WebOS
+              }
+              ;
+              return var1 & & var1.length & & (var2.version = var1),var2
+            }
+            
+          }
+          , {
+            test:[ / blackberry | \var59\var18 + / var6, / var60\stablet / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / var60\stablet\var70\var5(\var18 + (\.\var18 + ) * ) / var6,var0) | | var5.default.getFirstMatch( / blackberry\var18 + \ / (\var18 + ([var50\var5]\var18 + ) * ) / var6,var0) | | var5.default.getFirstMatch( / \var59(\var18 + ) / var6,var0);
+              return {
+                name:var6.OS_MAP.BlackBerry,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / bada / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / bada\ / (\var18 + (\.\var18 + ) * ) / var6,var0);
+              return {
+                name:var6.OS_MAP.Bada,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / tizen / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / tizen[ / \var5](\var18 + (\.\var18 + ) * ) / var6,var0);
+              return {
+                name:var6.OS_MAP.Tizen,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / linux / var6],describe:function() {
+              return {
+                name:var6.OS_MAP.Linux
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / CrOS / ],describe:function() {
+              return {
+                name:var6.OS_MAP.ChromeOS
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / PlayStation 4 / ],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / PlayStation 4[ / \var5](\var18 + (\.\var18 + ) * ) / var6,var0);
+              return {
+                name:var6.OS_MAP.PlayStation4,version:var1
+              }
+              
+            }
+            
+          }
+          ];
+          var1.default = var7,var0.exports = var1.default
+        }
+        ,94:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4,var5 = (var4 = var2(17)) & & var4.__esModule?var4: {
+            default:var4
+          }
+          ,var6 = var2(18),var7 = [ {
+            test:[ / googlebot / var6],describe:function() {
+              return {
+                type:"var71",vendor:"Google"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / huawei / var6],describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / (var43 - var72) / var6,var0) & & "Nova",var2 =  {
+                type:var6.PLATFORMS_MAP.mobile,vendor:"Huawei"
+              }
+              ;
+              return var1 & & (var2.model = var1),var2
+            }
+            
+          }
+          , {
+            test:[ / nexus\var5 * (?:7 | 8 | 9 | 10). * / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet,vendor:"Nexus"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / ipad / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / Macintosh(. * ?) FxiOS(. * ?)\ / / ],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / kftt build / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet,vendor:"Amazon",model:"Kindle Fire var73 7"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / silk / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet,vendor:"Amazon"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / tablet(? ! var74) / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              var var1 = var0.test( / ipod | iphone / var6),var2 = var0.test( / like (ipod | iphone) / var6);
+              return var1 & & ! var2
+            }
+            ,describe:function(var0) {
+              var var1 = var5.default.getFirstMatch( / (ipod | iphone) / var6,var0);
+              return {
+                type:var6.PLATFORMS_MAP.mobile,vendor:"Apple",model:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / nexus\var5 * [0 - 6]. * / var6, / galaxy nexus / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile,vendor:"Nexus"
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / [ ^ - ]mobi / var6],describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"blackberry" = = = var0.getBrowserName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile,vendor:"BlackBerry"
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"bada" = = = var0.getBrowserName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"windows phone" = = = var0.getBrowserName()
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile,vendor:"Microsoft"
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              var var1 = Number(String(var0.getOSVersion()).split(".")[0]);
+              return"android" = = = var0.getOSName( ! 0) & & var1 > = 3
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.tablet
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"android" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.mobile
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"macos" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.desktop,vendor:"Apple"
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"windows" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.desktop
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"linux" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.desktop
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"playstation 4" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.var38
+              }
+              
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return"roku" = = = var0.getOSName( ! 0)
+            }
+            ,describe:function() {
+              return {
+                type:var6.PLATFORMS_MAP.var38
+              }
+              
+            }
+            
+          }
+          ];
+          var1.default = var7,var0.exports = var1.default
+        }
+        ,95:function(var0,var1,var2) {
+          "var22 strict";
+          var1.__esModule = ! 0,var1.default = void 0;
+          var var4,var5 = (var4 = var2(17)) & & var4.__esModule?var4: {
+            default:var4
+          }
+          ,var6 = var2(18),var7 = [ {
+            test:function(var0) {
+              return"microsoft edge" = = = var0.getBrowserName( ! 0)
+            }
+            ,describe:function(var0) {
+              var15( / \sedg\ / / var6.test(var0))return {
+                name:var6.ENGINE_MAP.Blink
+              }
+              ;
+              var var1 = var5.default.getFirstMatch( / edge\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return {
+                name:var6.ENGINE_MAP.EdgeHTML,version:var1
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / trident / var6],describe:function(var0) {
+              var var1 =  {
+                name:var6.ENGINE_MAP.Trident
+              }
+              ,var2 = var5.default.getFirstMatch( / trident\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              return var0.test( / presto / var6)
+            }
+            ,describe:function(var0) {
+              var var1 =  {
+                name:var6.ENGINE_MAP.Presto
+              }
+              ,var2 = var5.default.getFirstMatch( / presto\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:function(var0) {
+              var var1 = var0.test( / gecko / var6),var2 = var0.test( / like gecko / var6);
+              return var1 & & ! var2
+            }
+            ,describe:function(var0) {
+              var var1 =  {
+                name:var6.ENGINE_MAP.Gecko
+              }
+              ,var2 = var5.default.getFirstMatch( / gecko\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          , {
+            test:[ / (apple)?webkit\ / 537\.36 / var6],describe:function() {
+              return {
+                name:var6.ENGINE_MAP.Blink
+              }
+              
+            }
+            
+          }
+          , {
+            test:[ / (apple)?webkit / var6],describe:function(var0) {
+              var var1 =  {
+                name:var6.ENGINE_MAP.WebKit
+              }
+              ,var2 = var5.default.getFirstMatch( / webkit\ / (\var18 + (\.?var50?\var18 + ) + ) / var6,var0);
+              return var2 & & (var1.version = var2),var1
+            }
+            
+          }
+          ];
+          var1.default = var7,var0.exports = var1.default
+        }
+        
+      }
+      )
+    }
+    ,7272:function(var0,var1) {
+      var var2,var4;
+      "undefined" ! = typeof globalThis?globalThis:"undefined" ! = typeof self & & self,var2 = function(var0) {
+        "var22 strict";
+        var15( ! (globalThis.chrome & & globalThis.chrome.runtime & & globalThis.chrome.runtime.var75))throw var10 Error("This script should only var42 loaded var20 var8 browser extension.");
+        var15(globalThis.browser & & globalThis.browser.runtime & & globalThis.browser.runtime.var75)var0.exports = globalThis.browser;
+        else {
+          const var1 = "var76 message port closed before var8 response var77 received.",var2 = var0 = >  {
+            const var2 =  {
+              alarms: {
+                clear: {
+                  minArgs:0,maxArgs:1
+                }
+                ,clearAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,var19: {
+                  minArgs:0,maxArgs:1
+                }
+                ,getAll: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,bookmarks: {
+                create: {
+                  minArgs:1,maxArgs:1
+                }
+                ,var19: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getChildren: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getRecent: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getSubTree: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getTree: {
+                  minArgs:0,maxArgs:0
+                }
+                ,move: {
+                  minArgs:2,maxArgs:2
+                }
+                ,remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeTree: {
+                  minArgs:1,maxArgs:1
+                }
+                ,search: {
+                  minArgs:1,maxArgs:1
+                }
+                ,update: {
+                  minArgs:2,maxArgs:2
+                }
+                
+              }
+              ,browserAction: {
+                disable: {
+                  minArgs:0,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,enable: {
+                  minArgs:0,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,getBadgeBackgroundColor: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getBadgeText: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getPopup: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getTitle: {
+                  minArgs:1,maxArgs:1
+                }
+                ,openPopup: {
+                  minArgs:0,maxArgs:0
+                }
+                ,setBadgeBackgroundColor: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,setBadgeText: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,setIcon: {
+                  minArgs:1,maxArgs:1
+                }
+                ,setPopup: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,setTitle: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                
+              }
+              ,browsingData: {
+                remove: {
+                  minArgs:2,maxArgs:2
+                }
+                ,removeCache: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeCookies: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeDownloads: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeFormData: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeHistory: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeLocalStorage: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removePasswords: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removePluginData: {
+                  minArgs:1,maxArgs:1
+                }
+                ,settings: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,commands: {
+                getAll: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,contextMenus: {
+                remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,update: {
+                  minArgs:2,maxArgs:2
+                }
+                
+              }
+              ,cookies: {
+                var19: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getAll: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getAllCookieStores: {
+                  minArgs:0,maxArgs:0
+                }
+                ,remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,var78: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,devtools: {
+                inspectedWindow: {
+                  eval: {
+                    minArgs:1,maxArgs:2,singleCallbackArg: ! 1
+                  }
+                  
+                }
+                ,panels: {
+                  create: {
+                    minArgs:3,maxArgs:3,singleCallbackArg: ! 0
+                  }
+                  ,elements: {
+                    createSidebarPane: {
+                      minArgs:1,maxArgs:1
+                    }
+                    
+                  }
+                  
+                }
+                
+              }
+              ,downloads: {
+                cancel: {
+                  minArgs:1,maxArgs:1
+                }
+                ,download: {
+                  minArgs:1,maxArgs:1
+                }
+                ,erase: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getFileIcon: {
+                  minArgs:1,maxArgs:2
+                }
+                ,open: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,pause: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeFile: {
+                  minArgs:1,maxArgs:1
+                }
+                ,resume: {
+                  minArgs:1,maxArgs:1
+                }
+                ,search: {
+                  minArgs:1,maxArgs:1
+                }
+                ,show: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                
+              }
+              ,extension: {
+                isAllowedFileSchemeAccess: {
+                  minArgs:0,maxArgs:0
+                }
+                ,isAllowedIncognitoAccess: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,history: {
+                addUrl: {
+                  minArgs:1,maxArgs:1
+                }
+                ,deleteAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,deleteRange: {
+                  minArgs:1,maxArgs:1
+                }
+                ,deleteUrl: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getVisits: {
+                  minArgs:1,maxArgs:1
+                }
+                ,search: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,i18n: {
+                detectLanguage: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getAcceptLanguages: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,identity: {
+                launchWebAuthFlow: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,idle: {
+                queryState: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,management: {
+                var19: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,getSelf: {
+                  minArgs:0,maxArgs:0
+                }
+                ,setEnabled: {
+                  minArgs:2,maxArgs:2
+                }
+                ,uninstallSelf: {
+                  minArgs:0,maxArgs:1
+                }
+                
+              }
+              ,notifications: {
+                clear: {
+                  minArgs:1,maxArgs:1
+                }
+                ,create: {
+                  minArgs:1,maxArgs:2
+                }
+                ,getAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,getPermissionLevel: {
+                  minArgs:0,maxArgs:0
+                }
+                ,update: {
+                  minArgs:2,maxArgs:2
+                }
+                
+              }
+              ,pageAction: {
+                getPopup: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getTitle: {
+                  minArgs:1,maxArgs:1
+                }
+                ,hide: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,setIcon: {
+                  minArgs:1,maxArgs:1
+                }
+                ,setPopup: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,setTitle: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                ,show: {
+                  minArgs:1,maxArgs:1,fallbackToNoCallback: ! 0
+                }
+                
+              }
+              ,permissions: {
+                contains: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getAll: {
+                  minArgs:0,maxArgs:0
+                }
+                ,remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,request: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,runtime: {
+                getBackgroundPage: {
+                  minArgs:0,maxArgs:0
+                }
+                ,getPlatformInfo: {
+                  minArgs:0,maxArgs:0
+                }
+                ,openOptionsPage: {
+                  minArgs:0,maxArgs:0
+                }
+                ,requestUpdateCheck: {
+                  minArgs:0,maxArgs:0
+                }
+                ,sendMessage: {
+                  minArgs:1,maxArgs:3
+                }
+                ,sendNativeMessage: {
+                  minArgs:2,maxArgs:2
+                }
+                ,setUninstallURL: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,sessions: {
+                getDevices: {
+                  minArgs:0,maxArgs:1
+                }
+                ,getRecentlyClosed: {
+                  minArgs:0,maxArgs:1
+                }
+                ,restore: {
+                  minArgs:0,maxArgs:1
+                }
+                
+              }
+              ,storage: {
+                local: {
+                  clear: {
+                    minArgs:0,maxArgs:0
+                  }
+                  ,var19: {
+                    minArgs:0,maxArgs:1
+                  }
+                  ,getBytesInUse: {
+                    minArgs:0,maxArgs:1
+                  }
+                  ,remove: {
+                    minArgs:1,maxArgs:1
+                  }
+                  ,var78: {
+                    minArgs:1,maxArgs:1
+                  }
+                  
+                }
+                ,managed: {
+                  var19: {
+                    minArgs:0,maxArgs:1
+                  }
+                  ,getBytesInUse: {
+                    minArgs:0,maxArgs:1
+                  }
+                  
+                }
+                ,sync: {
+                  clear: {
+                    minArgs:0,maxArgs:0
+                  }
+                  ,var19: {
+                    minArgs:0,maxArgs:1
+                  }
+                  ,getBytesInUse: {
+                    minArgs:0,maxArgs:1
+                  }
+                  ,remove: {
+                    minArgs:1,maxArgs:1
+                  }
+                  ,var78: {
+                    minArgs:1,maxArgs:1
+                  }
+                  
+                }
+                
+              }
+              ,tabs: {
+                captureVisibleTab: {
+                  minArgs:0,maxArgs:2
+                }
+                ,create: {
+                  minArgs:1,maxArgs:1
+                }
+                ,detectLanguage: {
+                  minArgs:0,maxArgs:1
+                }
+                ,discard: {
+                  minArgs:0,maxArgs:1
+                }
+                ,duplicate: {
+                  minArgs:1,maxArgs:1
+                }
+                ,executeScript: {
+                  minArgs:1,maxArgs:2
+                }
+                ,var19: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getCurrent: {
+                  minArgs:0,maxArgs:0
+                }
+                ,getZoom: {
+                  minArgs:0,maxArgs:1
+                }
+                ,getZoomSettings: {
+                  minArgs:0,maxArgs:1
+                }
+                ,goBack: {
+                  minArgs:0,maxArgs:1
+                }
+                ,goForward: {
+                  minArgs:0,maxArgs:1
+                }
+                ,highlight: {
+                  minArgs:1,maxArgs:1
+                }
+                ,insertCSS: {
+                  minArgs:1,maxArgs:2
+                }
+                ,move: {
+                  minArgs:2,maxArgs:2
+                }
+                ,query: {
+                  minArgs:1,maxArgs:1
+                }
+                ,reload: {
+                  minArgs:0,maxArgs:2
+                }
+                ,remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,removeCSS: {
+                  minArgs:1,maxArgs:2
+                }
+                ,sendMessage: {
+                  minArgs:2,maxArgs:3
+                }
+                ,setZoom: {
+                  minArgs:1,maxArgs:2
+                }
+                ,setZoomSettings: {
+                  minArgs:1,maxArgs:2
+                }
+                ,update: {
+                  minArgs:1,maxArgs:2
+                }
+                
+              }
+              ,topSites: {
+                var19: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,webNavigation: {
+                getAllFrames: {
+                  minArgs:1,maxArgs:1
+                }
+                ,getFrame: {
+                  minArgs:1,maxArgs:1
+                }
+                
+              }
+              ,webRequest: {
+                handlerBehaviorChanged: {
+                  minArgs:0,maxArgs:0
+                }
+                
+              }
+              ,windows: {
+                create: {
+                  minArgs:0,maxArgs:1
+                }
+                ,var19: {
+                  minArgs:1,maxArgs:2
+                }
+                ,getAll: {
+                  minArgs:0,maxArgs:1
+                }
+                ,getCurrent: {
+                  minArgs:0,maxArgs:1
+                }
+                ,getLastFocused: {
+                  minArgs:0,maxArgs:1
+                }
+                ,remove: {
+                  minArgs:1,maxArgs:1
+                }
+                ,update: {
+                  minArgs:2,maxArgs:2
+                }
+                
+              }
+              
+            }
+            ;
+            var15(0 = = = Object.keys(var2).length)throw var10 Error("var79 - metadata.json var80 var46 been included var20 browser - polyfill");
+            class var4 extends WeakMap {
+              constructor(var0,var1 = void 0) {
+                super(var1),this.createItem = var0
+              }
+              var19(var0) {
+                return this.var80(var0) | | this.var78(var0,this.createItem(var0)),super.var19(var0)
+              }
+              
+            }
+            const var5 = (var1,var2) = > (...var4) = >  {
+              var0.runtime.lastError?var1.reject(var10 Error(var0.runtime.lastError.message)):var2.singleCallbackArg | | var4.length < = 1 & & ! 1 ! = = var2.singleCallbackArg?var1.resolve(var4[0]):var1.resolve(var4)
+            }
+            ,var6 = var0 = > 1 = = var0?"argument":"arguments",var7 = (var0,var1,var2) = > var10 Proxy(var1, {
+              apply:(var1,var4,var5) = > var2.call(var4,var0,...var5)
+            }
+            );
+            let var8 = Function.call.bind(Object.prototype.hasOwnProperty);
+            const var9 = (var0,var1 =  {
+              
+            }
+            ,var2 =  {
+              
+            }
+            ) = >  {
+              let var4 = Object.create(null),var11 =  {
+                var80:(var1,var2) = > var2 var20 var0 | | var2 var20 var4,var19(var11,var16,var18) {
+                  var15(var16 var20 var4)return var4[var16];
+                  var15( ! (var16 var20 var0))return;
+                  let var48 = var0[var16];
+                  var15("function" = = typeof var48)var15("function" = = typeof var1[var16])var48 = var7(var0,var0[var16],var1[var16]);
+                  else var15(var8(var2,var16)) {
+                    let var1 = ((var0,var1) = > function(var2,...var4) {
+                      var15(var4.length < var1.minArgs)throw var10 Error(`Expected var81 least $ {
+                        var1.minArgs
+                      }
+                      $ {
+                        var6(var1.minArgs)
+                      }
+                      var3 $ {
+                        var0
+                      }
+                      (), var82 $ {
+                        var4.length
+                      }
+                      `);
+                      var15(var4.length > var1.maxArgs)throw var10 Error(`Expected var81 most $ {
+                        var1.maxArgs
+                      }
+                      $ {
+                        var6(var1.maxArgs)
+                      }
+                      var3 $ {
+                        var0
+                      }
+                      (), var82 $ {
+                        var4.length
+                      }
+                      `);
+                      return var10 Promise(((var6,var7) = >  {
+                        var15(var1.fallbackToNoCallback) var83 method doesn'var1 seem var84 support var85 callback parameter, falling back var84 call var86 without var8 callback: `,var5),var2[var0](...var4),var1.fallbackToNoCallback = ! 1,var1.noCallback = ! 0,var6()
+                      }
+                      else var1.noCallback?(var2[var0](...var4),var6()):var2[var0](...var4,var5( {
+                        resolve:var6,reject:var7
+                      }
+                      ,var1))
+                    }
+                    ))
+                  }
+                  )(var16,var2[var16]);
+                  var48 = var7(var0,var0[var16],var1)
+                }
+                else var48 = var48.bind(var0);
+                else var15("object" = = typeof var48 & & null ! = = var48 & & (var8(var1,var16) | | var8(var2,var16)))var48 = var9(var48,var1[var16],var2[var16]);
+                else {
+                  var15( ! var8(var2," * "))return Object.defineProperty(var4,var16, {
+                    configurable: ! 0,enumerable: ! 0,var19:() = > var0[var16],var78(var1) {
+                      var0[var16] = var1
+                    }
+                    
+                  }
+                  ),var48;
+                  var48 = var9(var48,var1[var16],var2[" * "])
+                }
+                return var4[var16] = var48,var48
+              }
+              ,var78:(var1,var2,var5,var6) = > (var2 var20 var4?var4[var2] = var5:var0[var2] = var5, ! 0),defineProperty:(var0,var1,var2) = > Reflect.defineProperty(var4,var1,var2),deleteProperty:(var0,var1) = > Reflect.deleteProperty(var4,var1)
+            }
+            ,var16 = Object.create(var0);
+            return var10 Proxy(var16,var11)
+          }
+          ,var11 = var0 = > ( {
+            addListener(var1,var2,...var4) {
+              var1.addListener(var0.var19(var2),...var4)
+            }
+            ,hasListener:(var1,var2) = > var1.hasListener(var0.var19(var2)),removeListener(var1,var2) {
+              var1.removeListener(var0.var19(var2))
+            }
+            
+          }
+          ),var16 = var10 var4((var0 = > "function" ! = typeof var0?var0:function(var1) {
+            const var2 = var9(var1, {
+              
+            }
+            , {
+              getContent: {
+                minArgs:0,maxArgs:0
+              }
+              
+            }
+            );
+            var0(var2)
+          }
+          )),var18 = var10 var4((var0 = > "function" ! = typeof var0?var0:function(var1,var2,var4) {
+            let var5,var6,var7 = ! 1,var8 = var10 Promise((var0 = >  {
+              var5 = function(var1) {
+                var7 = ! 0,var0(var1)
+              }
+              
+            }
+            ));
+            const var9 = ! 0 ! = = var6 & & ((var11 = var6) & & "object" = = typeof var11 & & "function" = = typeof var11.then);
+            var var11;
+            var15( ! 0 ! = = var6 & & ! var9 & & ! var7)return ! 1;
+            return(var9?var6:var8).then((var0 = >  {
+              var4(var0)
+            }
+            ),(var0 = >  {
+              let var1;
+              var1 = var0 & & (var0 instanceof Error | | "string" = = typeof var0.message)?var0.message:"var87 unexpected error occurred",var4( {
+                __mozWebExtensionPolyfillReject__: ! 0,message:var1
+              }
+              )
+            }
+            )).catch((var0 = >  {
+              console.error("Failed var84 send onMessage rejected reply",var0)
+            }
+            )), ! 0
+          }
+          )),var48 = ( {
+            reject:var2,resolve:var4
+          }
+          ,var5) = >  {
+            var0.runtime.lastError?var0.runtime.lastError.message = = = var1?var4():var2(var10 Error(var0.runtime.lastError.message)):var5 & & var5.__mozWebExtensionPolyfillReject__?var2(var10 Error(var5.message)):var4(var5)
+          }
+          ,var49 = (var0,var1,var2,...var4) = >  {
+            var15(var4.length < var1.minArgs)throw var10 Error(`Expected var81 least $ {
+              var1.minArgs
+            }
+            $ {
+              var6(var1.minArgs)
+            }
+            var3 $ {
+              var0
+            }
+            (), var82 $ {
+              var4.length
+            }
+            `);
+            var15(var4.length > var1.maxArgs)throw var10 Error(`Expected var81 most $ {
+              var1.maxArgs
+            }
+            $ {
+              var6(var1.maxArgs)
+            }
+            var3 $ {
+              var0
+            }
+            (), var82 $ {
+              var4.length
+            }
+            `);
+            return var10 Promise(((var0,var1) = >  {
+              const var5 = var48.bind(null, {
+                resolve:var0,reject:var1
+              }
+              );
+              var4.push(var5),var2.sendMessage(...var4)
+            }
+            ))
+          }
+          ,var17 =  {
+            devtools: {
+              network: {
+                onRequestFinished:var11(var16)
+              }
+              
+            }
+            ,runtime: {
+              onMessage:var11(var18),onMessageExternal:var11(var18),sendMessage:var49.bind(null,"sendMessage", {
+                minArgs:1,maxArgs:3
+              }
+              )
+            }
+            ,tabs: {
+              sendMessage:var49.bind(null,"sendMessage", {
+                minArgs:2,maxArgs:3
+              }
+              )
+            }
+            
+          }
+          ,var21 =  {
+            clear: {
+              minArgs:1,maxArgs:1
+            }
+            ,var19: {
+              minArgs:1,maxArgs:1
+            }
+            ,var78: {
+              minArgs:1,maxArgs:1
+            }
+            
+          }
+          ;
+          return var2.privacy =  {
+            network: {
+              " * ":var21
+            }
+            ,services: {
+              " * ":var21
+            }
+            ,websites: {
+              " * ":var21
+            }
+            
+          }
+          ,var9(var0,var17,var2)
+        }
+        ;
+        var0.exports = var2(chrome)
+      }
+      
+    }
+    ,void 0 = = = (var4 = var2.apply(var1,[var0])) | | (var0.exports = var4)
+  }
+  ,2365:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9200),var5 = var2(7938),var6 = TypeError;
+    var0.exports = function(var0) {
+      var15(var4(var0))return var0;
+      throw var10 var6(var5(var0) + " var45 var46 var8 function")
+    }
+    
+  }
+  ,9677:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(100),var5 = String,var6 = TypeError;
+    var0.exports = function(var0) {
+      var15(var4(var0))return var0;
+      throw var10 var6("var88'var1 var78 " + var5(var0) + " var89 var8 prototype")
+    }
+    
+  }
+  ,602:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(2430),var5 = TypeError;
+    var0.exports = function(var0,var1) {
+      var15(var4(var1,var0))return var0;
+      throw var10 var5("Incorrect invocation")
+    }
+    
+  }
+  ,4398:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9131),var5 = String,var6 = TypeError;
+    var0.exports = function(var0) {
+      var15(var4(var0))return var0;
+      throw var10 var6(var5(var0) + " var45 var46 var90 object")
+    }
+    
+  }
+  ,6134:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(4360),var5 = var2(8479),var6 = var2(7457),var7 = function(var0) {
+      return function(var1,var2,var7) {
+        var var8 = var4(var1),var9 = var6(var8);
+        var15(0 = = = var9)return ! var0 & & - 1;
+        var var11,var16 = var5(var7,var9);
+        var15(var0 & & var2 ! = var2) {
+          var3(;
+          var9 > var16;
+          )var15((var11 = var8[var16 + + ]) ! = var11)return ! 0
+        }
+        else var3(;
+        var9 > var16;
+        var16 + + )var15((var0 | | var16 var20 var8) & & var8[var16] = = = var2)return var0 | | var16 | | 0;
+        return ! var0 & & - 1
+      }
+      
+    }
+    ;
+    var0.exports =  {
+      includes:var7( ! 0),indexOf:var7( ! 1)
+    }
+    
+  }
+  ,5589:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var4( {
+      
+    }
+    .toString),var6 = var4("".slice);
+    var0.exports = function(var0) {
+      return var6(var5(var0),8, - 1)
+    }
+    
+  }
+  ,3650:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(917),var5 = var2(9200),var6 = var2(5589),var7 = var2(4702)("toStringTag"),var8 = Object,var9 = "Arguments" = = = var6(function() {
+      return arguments
+    }
+    ());
+    var0.exports = var4?var6:function(var0) {
+      var var1,var2,var4;
+      return void 0 = = = var0?"Undefined":null = = = var0?"Null":"string" = = typeof(var2 = function(var0,var1) {
+        
+      }
+      (var1 = var8(var0),var7))?var2:var9?var6(var1):"Object" = = = (var4 = var6(var1)) & & var5(var1.callee)?"Arguments":var4
+    }
+    
+  }
+  ,4085:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9158),var5 = var2(4540),var6 = var2(2428),var7 = var2(4446);
+    var0.exports = function(var0,var1,var2) {
+      var3(var var8 = var5(var1),var9 = var7.var49,var11 = var6.var49,var16 = 0;
+      var16 < var8.length;
+      var16 + + ) {
+        var var18 = var8[var16];
+        var4(var0,var18) | | var2 & & var4(var2,var18) | | var9(var0,var18,var11(var1,var18))
+      }
+      
+    }
+    
+  }
+  ,5044:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(4446),var6 = var2(2007);
+    var0.exports = var4?function(var0,var1,var2) {
+      return var5.var49(var0,var1,var6(1,var2))
+    }
+    :function(var0,var1,var2) {
+      return var0[var1] = var2,var0
+    }
+    
+  }
+  ,2007:var0 = >  {
+    "var22 strict";
+    var0.exports = function(var0,var1) {
+      return {
+        enumerable: ! (1 & var0),configurable: ! (2 & var0),writable: ! (4 & var0),value:var1
+      }
+      
+    }
+    
+  }
+  ,8521:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9200),var5 = var2(4446),var6 = var2(4174),var7 = var2(8466);
+    var0.exports = function(var0,var1,var2,var8) {
+      var8 | | (var8 =  {
+        
+      }
+      );
+      var var9 = var8.enumerable,var11 = void 0 ! = = var8.name?var8.name:var1;
+      var15(var4(var2) & & var6(var2,var11,var8),var8.global)var9?var0[var1] = var2:var7(var1,var2);
+      else {
+        var9?var0[var1] = var2:var5.var49(var0,var1, {
+          value:var2,enumerable: ! 1,configurable: ! var8.nonConfigurable,writable: ! var8.nonWritable
+        }
+        )
+      }
+      return var0
+    }
+    
+  }
+  ,8466:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = Object.defineProperty;
+    var0.exports = function(var0,var1) {
+      return var1
+    }
+    
+  }
+  ,6857:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(942);
+    var0.exports = ! var4((function() {
+      return 7 ! = = Object.defineProperty( {
+        
+      }
+      ,1, {
+        var19:function() {
+          return 7
+        }
+        
+      }
+      )[1]
+    }
+    ))
+  }
+  ,1466:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = var2(9131),var6 = var4.document,var7 = var5(var6) & & var5(var6.createElement);
+    var0.exports = function(var0) {
+      return var7?var6.createElement(var0): {
+        
+      }
+      
+    }
+    
+  }
+  ,4131:var0 = >  {
+    "var22 strict";
+    var0.exports =  {
+      IndexSizeError: {
+        var5:"INDEX_SIZE_ERR",var11:1,var17:1
+      }
+      ,DOMStringSizeError: {
+        var5:"DOMSTRING_SIZE_ERR",var11:2,var17:0
+      }
+      ,HierarchyRequestError: {
+        var5:"HIERARCHY_REQUEST_ERR",var11:3,var17:1
+      }
+      ,WrongDocumentError: {
+        var5:"WRONG_DOCUMENT_ERR",var11:4,var17:1
+      }
+      ,InvalidCharacterError: {
+        var5:"INVALID_CHARACTER_ERR",var11:5,var17:1
+      }
+      ,NoDataAllowedError: {
+        var5:"NO_DATA_ALLOWED_ERR",var11:6,var17:0
+      }
+      ,NoModificationAllowedError: {
+        var5:"NO_MODIFICATION_ALLOWED_ERR",var11:7,var17:1
+      }
+      ,NotFoundError: {
+        var5:"NOT_FOUND_ERR",var11:8,var17:1
+      }
+      ,NotSupportedError: {
+        var5:"NOT_SUPPORTED_ERR",var11:9,var17:1
+      }
+      ,InUseAttributeError: {
+        var5:"INUSE_ATTRIBUTE_ERR",var11:10,var17:1
+      }
+      ,InvalidStateError: {
+        var5:"INVALID_STATE_ERR",var11:11,var17:1
+      }
+      ,SyntaxError: {
+        var5:"SYNTAX_ERR",var11:12,var17:1
+      }
+      ,InvalidModificationError: {
+        var5:"INVALID_MODIFICATION_ERR",var11:13,var17:1
+      }
+      ,NamespaceError: {
+        var5:"NAMESPACE_ERR",var11:14,var17:1
+      }
+      ,InvalidAccessError: {
+        var5:"INVALID_ACCESS_ERR",var11:15,var17:1
+      }
+      ,ValidationError: {
+        var5:"VALIDATION_ERR",var11:16,var17:0
+      }
+      ,TypeMismatchError: {
+        var5:"TYPE_MISMATCH_ERR",var11:17,var17:1
+      }
+      ,SecurityError: {
+        var5:"SECURITY_ERR",var11:18,var17:1
+      }
+      ,NetworkError: {
+        var5:"NETWORK_ERR",var11:19,var17:1
+      }
+      ,AbortError: {
+        var5:"ABORT_ERR",var11:20,var17:1
+      }
+      ,URLMismatchError: {
+        var5:"URL_MISMATCH_ERR",var11:21,var17:1
+      }
+      ,QuotaExceededError: {
+        var5:"QUOTA_EXCEEDED_ERR",var11:22,var17:1
+      }
+      ,TimeoutError: {
+        var5:"TIMEOUT_ERR",var11:23,var17:1
+      }
+      ,InvalidNodeTypeError: {
+        var5:"INVALID_NODE_TYPE_ERR",var11:24,var17:1
+      }
+      ,DataCloneError: {
+        var5:"DATA_CLONE_ERR",var11:25,var17:1
+      }
+      
+    }
+    
+  }
+  ,1681:var0 = >  {
+    "var22 strict";
+    var0.exports = "undefined" ! = typeof navigator & & String(navigator.userAgent) | | ""
+  }
+  ,4017:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4,var5,var6 = var2(7732),var7 = var2(1681),var8 = var6.process,var9 = var6.Deno,var11 = var8 & & var8.versions | | var9 & & var9.version,var16 = var11 & & var11.var91;
+    var16 & & (var5 = (var4 = var16.split("."))[0] > 0 & & var4[0] < 4?1: + (var4[0] + var4[1])), ! var5 & & var7 & & ( ! (var4 = var7.match( / Edge\ / (\var18 + ) / )) | | var4[1] > = 74) & & (var4 = var7.match( / Chrome\ / (\var18 + ) / )) & & (var5 = + var4[1]),var0.exports = var5
+  }
+  ,2030:var0 = >  {
+    "var22 strict";
+    var0.exports = ["constructor","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","toLocaleString","toString","valueOf"]
+  }
+  ,5824:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = Error,var6 = var4("".replace),var7 = String(var10 var5("zxcasd").stack),var8 = / \var4\var5 * var81 [ ^ :] * :[ ^ \var4] * / ,var9 = var8.test(var7);
+    var0.exports = function(var0,var1) {
+      var15(var9 & & "string" = = typeof var0 & & ! var5.prepareStackTrace)var3(;
+      var1 - - ;
+      )var0 = var6(var0,var8,"");
+      return var0
+    }
+    
+  }
+  ,3353:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = var2(2428).var49,var6 = var2(5044),var7 = var2(8521),var8 = var2(8466),var9 = var2(4085),var11 = var2(7453);
+    var0.exports = function(var0,var1) {
+      var var2,var16,var18,var48,var49,var17 = var0.target,var21 = var0.global,var92 = var0.stat;
+      var15(var2 = var21?var4:var92?var4[var17] | | var8(var17, {
+        
+      }
+      ):var4[var17] & & var4[var17].prototype)var3(var16 var20 var1) {
+        var15(var48 = var1[var16],var18 = var0.dontCallGetSet?(var49 = var5(var2,var16)) & & var49.value:var2[var16], ! var11(var21?var16:var17 + (var92?".":"#") + var16,var0.forced) & & void 0 ! = = var18) {
+          var15(typeof var48 = = typeof var18)continue;
+          var9(var48,var18)
+        }
+        (var0.sham | | var18 & & var18.sham) & & var6(var48,"sham", ! 0),var7(var2,var16,var48,var0)
+      }
+      
+    }
+    
+  }
+  ,942:var0 = >  {
+    "var22 strict";
+    var0.exports = function(var0) {
+      
+    }
+    
+  }
+  ,7315:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(942);
+    var0.exports = ! var4((function() {
+      var var0 = function() {
+        
+      }
+      .bind();
+      return"function" ! = typeof var0 | | var0.hasOwnProperty("prototype")
+    }
+    ))
+  }
+  ,492:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7315),var5 = Function.prototype.call;
+    var0.exports = var4?var5.bind(var5):function() {
+      return var5.apply(var5,arguments)
+    }
+    
+  }
+  ,7403:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(9158),var6 = Function.prototype,var7 = var4 & & Object.getOwnPropertyDescriptor,var8 = var5(var6,"name"),var9 = var8 & & "something" = = = function() {
+      
+    }
+    .name,var11 = var8 & & ( ! var4 | | var4 & & var7(var6,"name").configurable);
+    var0.exports =  {
+      EXISTS:var8,PROPER:var9,CONFIGURABLE:var11
+    }
+    
+  }
+  ,9229:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(2365);
+    var0.exports = function(var0,var1,var2) {
+      
+    }
+    
+  }
+  ,7133:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7315),var5 = Function.prototype,var6 = var5.call,var7 = var4 & & var5.bind.bind(var6,var6);
+    var0.exports = var4?var7:function(var0) {
+      return function() {
+        return var6.apply(var0,arguments)
+      }
+      
+    }
+    
+  }
+  ,848:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = var2(9200);
+    var0.exports = function(var0,var1) {
+      return arguments.length < 2?(var2 = var4[var0],var5(var2)?var2:void 0):var4[var0] & & var4[var0][var1];
+      var var2
+    }
+    
+  }
+  ,9325:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(2365),var5 = var2(2178);
+    var0.exports = function(var0,var1) {
+      var var2 = var0[var1];
+      return var5(var2)?void 0:var4(var2)
+    }
+    
+  }
+  ,7732:function(var0,var1,var2) {
+    "var22 strict";
+    var var4 = function(var0) {
+      return var0 & & var0.Math = = = Math & & var0
+    }
+    ;
+    var0.exports = var4("object" = = typeof globalThis & & globalThis) | | var4("object" = = typeof window & & window) | | var4("object" = = typeof self & & self) | | var4("object" = = typeof var2.var48 & & var2.var48) | | var4("object" = = typeof this & & this) | | function() {
+      return this
+    }
+    () | | Function("return this")()
+  }
+  ,9158:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(9272),var6 = var4( {
+      
+    }
+    .hasOwnProperty);
+    var0.exports = Object.hasOwn | | function(var0,var1) {
+      return var6(var5(var0),var1)
+    }
+    
+  }
+  ,640:var0 = >  {
+    "var22 strict";
+    var0.exports =  {
+      
+    }
+    
+  }
+  ,5842:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(942),var6 = var2(1466);
+    var0.exports = ! var4 & & ! var5((function() {
+      return 7 ! = = Object.defineProperty(var6("var93"),"var8", {
+        var19:function() {
+          return 7
+        }
+        
+      }
+      ).var8
+    }
+    ))
+  }
+  ,8060:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(942),var6 = var2(5589),var7 = Object,var8 = var4("".split);
+    var0.exports = var5((function() {
+      return ! var7("var94").propertyIsEnumerable(0)
+    }
+    ))?function(var0) {
+      return"String" = = = var6(var0)?var8(var0,""):var7(var0)
+    }
+    :var7
+  }
+  ,2210:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9200),var5 = var2(9131),var6 = var2(8018);
+    var0.exports = function(var0,var1,var2) {
+      var var7,var8;
+      return var6 & & var4(var7 = var1.constructor) & & var7 ! = = var2 & & var5(var8 = var7.prototype) & & var8 ! = = var2.prototype & & var6(var0,var8),var0
+    }
+    
+  }
+  ,7217:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(9200),var6 = var2(5210),var7 = var4(Function.toString);
+    var5(var6.inspectSource) | | (var6.inspectSource = function(var0) {
+      return var7(var0)
+    }
+    ),var0.exports = var6.inspectSource
+  }
+  ,1514:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4,var5,var6,var7 = var2(3125),var8 = var2(7732),var9 = var2(9131),var11 = var2(5044),var16 = var2(9158),var18 = var2(5210),var48 = var2(2316),var49 = var2(640),var17 = "Object already initialized",var21 = var8.TypeError,var92 = var8.WeakMap;
+    var15(var7 | | var18.state) {
+      var var95 = var18.state | | (var18.state = var10 var92);
+      var95.var19 = var95.var19,var95.var80 = var95.var80,var95.var78 = var95.var78,var4 = function(var0,var1) {
+        var15(var95.var80(var0))throw var10 var21(var17);
+        return var1.facade = var0,var95.var78(var0,var1),var1
+      }
+      ,var5 = function(var0) {
+        return var95.var19(var0) | |  {
+          
+        }
+        
+      }
+      ,var6 = function(var0) {
+        return var95.var80(var0)
+      }
+      
+    }
+    else {
+      var var96 = var48("state");
+      var49[var96] = ! 0,var4 = function(var0,var1) {
+        var15(var16(var0,var96))throw var10 var21(var17);
+        return var1.facade = var0,var11(var0,var96,var1),var1
+      }
+      ,var5 = function(var0) {
+        return var16(var0,var96)?var0[var96]: {
+          
+        }
+        
+      }
+      ,var6 = function(var0) {
+        return var16(var0,var96)
+      }
+      
+    }
+    var0.exports =  {
+      var78:var4,var19:var5,var80:var6,enforce:function(var0) {
+        return var6(var0)?var5(var0):var4(var0, {
+          
+        }
+        )
+      }
+      ,getterFor:function(var0) {
+        return function(var1) {
+          var var2;
+          var15( ! var9(var1) | | (var2 = var5(var1)).type ! = = var0)throw var10 var21("Incompatible receiver, " + var0 + " required");
+          return var2
+        }
+        
+      }
+      
+    }
+    
+  }
+  ,9200:var0 = >  {
+    "var22 strict";
+    var var1 = "object" = = typeof document & & document.var97;
+    var0.exports = void 0 = = = var1 & & void 0 ! = = var1?function(var0) {
+      return"function" = = typeof var0 | | var0 = = = var1
+    }
+    :function(var0) {
+      return"function" = = typeof var0
+    }
+    
+  }
+  ,7453:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(942),var5 = var2(9200),var6 = / # | \.prototype\. / ,var7 = function(var0,var1) {
+      var var2 = var9[var8(var0)];
+      return var2 = = = var16 | | var2 ! = = var11 & & (var5(var1)?var4(var1): ! ! var1)
+    }
+    ,var8 = var7.normalize = function(var0) {
+      return String(var0).replace(var6,".").toLowerCase()
+    }
+    ,var9 = var7.data =  {
+      
+    }
+    ,var11 = var7.NATIVE = "var98",var16 = var7.POLYFILL = "var99";
+    var0.exports = var7
+  }
+  ,2178:var0 = >  {
+    "var22 strict";
+    var0.exports = function(var0) {
+      return null = = var0
+    }
+    
+  }
+  ,9131:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9200);
+    var0.exports = function(var0) {
+      return"object" = = typeof var0?null ! = = var0:var4(var0)
+    }
+    
+  }
+  ,100:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9131);
+    var0.exports = function(var0) {
+      return var4(var0) | | null = = = var0
+    }
+    
+  }
+  ,1818:var0 = >  {
+    "var22 strict";
+    var0.exports = ! 1
+  }
+  ,460:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(848),var5 = var2(9200),var6 = var2(2430),var7 = var2(6253),var8 = Object;
+    var0.exports = var7?function(var0) {
+      return"symbol" = = typeof var0
+    }
+    :function(var0) {
+      var var1 = var4("Symbol");
+      return var5(var1) & & var6(var1.prototype,var8(var0))
+    }
+    
+  }
+  ,7457:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(2695);
+    var0.exports = function(var0) {
+      return var4(var0.length)
+    }
+    
+  }
+  ,4174:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(942),var6 = var2(9200),var7 = var2(9158),var8 = var2(6857),var9 = var2(7403).CONFIGURABLE,var11 = var2(7217),var16 = var2(1514),var18 = var16.enforce,var48 = var16.var19,var49 = String,var17 = Object.defineProperty,var21 = var4("".slice),var92 = var4("".replace),var95 = var4([].join),var96 = var8 & & ! var5((function() {
+      return 8 ! = = var17((function() {
+        
+      }
+      ),"length", {
+        value:8
+      }
+      ).length
+    }
+    )),var100 = String(String).split("String"),var64 = var0.exports = function(var0,var1,var2) {
+      "Symbol(" = = = var21(var49(var1),0,7) & & (var1 = "[" + var92(var49(var1), / ^ Symbol\(([ ^ )] * )\). * $ / ,"$1") + "]"),var2 & & var2.getter & & (var1 = "var19 " + var1),var2 & & var2.setter & & (var1 = "var78 " + var1),( ! var7(var0,"name") | | var9 & & var0.name ! = = var1) & & (var8?var17(var0,"name", {
+        value:var1,configurable: ! 0
+      }
+      ):var0.name = var1),var96 & & var2 & & var7(var2,"arity") & & var0.length ! = = var2.arity & & var17(var0,"length", {
+        value:var2.arity
+      }
+      );
+      var var4 = var18(var0);
+      return var7(var4,"source") | | (var4.source = var95(var100,"string" = = typeof var1?var1:"")),var0
+    }
+    ;
+    Function.prototype.toString = var64((function() {
+      return var6(this) & & var48(this).source | | var11(this)
+    }
+    ),"toString")
+  }
+  ,8226:var0 = >  {
+    "var22 strict";
+    var var1 = Math.ceil,var2 = Math.floor;
+    var0.exports = Math.trunc | | function(var0) {
+      var var4 = + var0;
+      return(var4 > 0?var2:var1)(var4)
+    }
+    
+  }
+  ,5334:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7830);
+    var0.exports = function(var0,var1) {
+      return void 0 = = = var0?arguments.length < 2?"":var1:var4(var0)
+    }
+    
+  }
+  ,4446:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(5842),var6 = var2(335),var7 = var2(4398),var8 = var2(2548),var9 = TypeError,var11 = Object.defineProperty,var16 = Object.getOwnPropertyDescriptor,var18 = "enumerable",var48 = "configurable",var49 = "writable";
+    var1.var49 = var4?var6?function(var0,var1,var2) {
+      var15(var7(var0),var1 = var8(var1),var7(var2),"function" = = typeof var0 & & "prototype" = = = var1 & & "value"var20 var2 & & var49 var20 var2 & & ! var2[var49]) {
+        var var4 = var16(var0,var1);
+        var4 & & var4[var49] & & (var0[var1] = var2.value,var2 =  {
+          configurable:var48 var20 var2?var2[var48]:var4[var48],enumerable:var18 var20 var2?var2[var18]:var4[var18],writable: ! 1
+        }
+        )
+      }
+      return var11(var0,var1,var2)
+    }
+    :var11:function(var0,var1,var2) {
+      var15(var7(var0),var1 = var8(var1),var7(var2),var5)var15("var19"var20 var2 | | "var78"var20 var2)throw var10 var9("Accessors var46 supported");
+      return"value"var20 var2 & & (var0[var1] = var2.value),var0
+    }
+    
+  }
+  ,2428:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(492),var6 = var2(6732),var7 = var2(2007),var8 = var2(4360),var9 = var2(2548),var11 = var2(9158),var16 = var2(5842),var18 = Object.getOwnPropertyDescriptor;
+    var1.var49 = var4?var18:function(var0,var1) {
+      var15(var0 = var8(var0),var1 = var9(var1),var16)var15(var11(var0,var1))return var7( ! var5(var6.var49,var0,var1),var0[var1])
+    }
+    
+  }
+  ,5809:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(8959),var5 = var2(2030).concat("length","prototype");
+    var1.var49 = Object.getOwnPropertyNames | | function(var0) {
+      return var4(var0,var5)
+    }
+    
+  }
+  ,1264:(var0,var1) = >  {
+    "var22 strict";
+    var1.var49 = Object.getOwnPropertySymbols
+  }
+  ,2430:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133);
+    var0.exports = var4( {
+      
+    }
+    .isPrototypeOf)
+  }
+  ,8959:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = var2(9158),var6 = var2(4360),var7 = var2(6134).indexOf,var8 = var2(640),var9 = var4([].push);
+    var0.exports = function(var0,var1) {
+      var var2,var4 = var6(var0),var11 = 0,var16 = [];
+      var3(var2 var20 var4) ! var5(var8,var2) & & var5(var4,var2) & & var9(var16,var2);
+      var3(;
+      var1.length > var11;
+      )var5(var4,var2 = var1[var11 + + ]) & & (~var7(var16,var2) | | var9(var16,var2));
+      return var16
+    }
+    
+  }
+  ,6732:(var0,var1) = >  {
+    "var22 strict";
+    var var2 =  {
+      
+    }
+    .propertyIsEnumerable,var4 = Object.getOwnPropertyDescriptor,var5 = var4 & & ! var2.call( {
+      1:2
+    }
+    ,1);
+    var1.var49 = var5?function(var0) {
+      var var1 = var4(this,var0);
+      return ! ! var1 & & var1.enumerable
+    }
+    :var2
+  }
+  ,8018:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9229),var5 = var2(9131),var6 = var2(3977),var7 = var2(9677);
+    var0.exports = Object.setPrototypeOf | | ("__proto__"var20 {
+      
+    }
+    ?function() {
+      var var0,var1 = ! 1,var2 =  {
+        
+      }
+      ;
+      return function(var2,var4) {
+        return var6(var2),var7(var4),var5(var2)?(var1?var0(var2,var4):var2.__proto__ = var4,var2):var2
+      }
+      
+    }
+    ():void 0)
+  }
+  ,1427:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(492),var5 = var2(9200),var6 = var2(9131),var7 = TypeError;
+    var0.exports = function(var0,var1) {
+      var var2,var8;
+      var15("string" = = = var1 & & var5(var2 = var0.toString) & & ! var6(var8 = var4(var2,var0)))return var8;
+      var15(var5(var2 = var0.valueOf) & & ! var6(var8 = var4(var2,var0)))return var8;
+      var15("string" ! = = var1 & & var5(var2 = var0.toString) & & ! var6(var8 = var4(var2,var0)))return var8;
+      throw var10 var7("var88'var1 convert object var84 primitive value")
+    }
+    
+  }
+  ,4540:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(848),var5 = var2(7133),var6 = var2(5809),var7 = var2(1264),var8 = var2(4398),var9 = var5([].concat);
+    var0.exports = var4("Reflect","ownKeys") | | function(var0) {
+      var var1 = var6.var49(var8(var0)),var2 = var7.var49;
+      return var2?var9(var1,var2(var0)):var1
+    }
+    
+  }
+  ,3977:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(2178),var5 = TypeError;
+    var0.exports = function(var0) {
+      var15(var4(var0))throw var10 var5("var88'var1 call method var101 " + var0);
+      return var0
+    }
+    
+  }
+  ,2316:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6014),var5 = var2(685),var6 = var4("keys");
+    var0.exports = function(var0) {
+      return var6[var0] | | (var6[var0] = var5(var0))
+    }
+    
+  }
+  ,5210:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(1818),var5 = var2(7732),var6 = var2(8466),var7 = "__core - js_shared__",var8 = var0.exports = var5[var7] | | var6(var7, {
+      
+    }
+    );
+    (var8.versions | | (var8.versions = [])).push( {
+      version:"3.37.1",mode:var4?"pure":"global",copyright:"© 2014 - 2024 Denis Pushkarev (zloirock.var102)",license:"https: / / github.var103 / zloirock / core - var104 / blob / var105.37.1 / LICENSE",source:"https: / / github.var103 / zloirock / core - var104"
+    }
+    )
+  }
+  ,6014:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(5210);
+    var0.exports = function(var0,var1) {
+      return var4[var0] | | (var4[var0] = var1 | |  {
+        
+      }
+      )
+    }
+    
+  }
+  ,260:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(4017),var5 = var2(942),var6 = var2(7732).String;
+    var0.exports = ! ! Object.getOwnPropertySymbols & & ! var5((function() {
+      var var0 = Symbol("symbol detection");
+      return ! var6(var0) | | ! (Object(var0)instanceof Symbol) | | ! Symbol.sham & & var4 & & var4 < 41
+    }
+    ))
+  }
+  ,8479:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(4932),var5 = Math.var13,var6 = Math.var14;
+    var0.exports = function(var0,var1) {
+      var var2 = var4(var0);
+      return var2 < 0?var5(var2 + var1,0):var6(var2,var1)
+    }
+    
+  }
+  ,4360:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(8060),var5 = var2(3977);
+    var0.exports = function(var0) {
+      return var4(var5(var0))
+    }
+    
+  }
+  ,4932:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(8226);
+    var0.exports = function(var0) {
+      var var1 = + var0;
+      return var1 ! = var1 | | 0 = = = var1?0:var4(var1)
+    }
+    
+  }
+  ,2695:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(4932),var5 = Math.var14;
+    var0.exports = function(var0) {
+      var var1 = var4(var0);
+      return var1 > 0?var5(var1,9007199254740991):0
+    }
+    
+  }
+  ,9272:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(3977),var5 = Object;
+    var0.exports = function(var0) {
+      return var5(var4(var0))
+    }
+    
+  }
+  ,9422:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(492),var5 = var2(9131),var6 = var2(460),var7 = var2(9325),var8 = var2(1427),var9 = var2(4702),var11 = TypeError,var16 = var9("toPrimitive");
+    var0.exports = function(var0,var1) {
+      var15( ! var5(var0) | | var6(var0))return var0;
+      var var2,var9 = var7(var0,var16);
+      var15(var9) {
+        var15(void 0 = = = var1 & & (var1 = "default"),var2 = var4(var9,var0,var1), ! var5(var2) | | var6(var2))return var2;
+        throw var10 var11("var88'var1 convert object var84 primitive value")
+      }
+      return void 0 = = = var1 & & (var1 = "number"),var8(var0,var1)
+    }
+    
+  }
+  ,2548:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(9422),var5 = var2(460);
+    var0.exports = function(var0) {
+      var var1 = var4(var0,"string");
+      return var5(var1)?var1:var1 + ""
+    }
+    
+  }
+  ,917:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 =  {
+      
+    }
+    ;
+    var4[var2(4702)("toStringTag")] = "var94",var0.exports = "[object var94]" = = = String(var4)
+  }
+  ,7830:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(3650),var5 = String;
+    var0.exports = function(var0) {
+      var15("Symbol" = = = var4(var0))throw var10 TypeError("Cannot convert var8 Symbol value var84 var8 string");
+      return var5(var0)
+    }
+    
+  }
+  ,7938:var0 = >  {
+    "var22 strict";
+    var var1 = String;
+    var0.exports = function(var0) {
+      
+    }
+    
+  }
+  ,685:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7133),var5 = 0,var6 = Math.random(),var7 = var4(1..toString);
+    var0.exports = function(var0) {
+      return"Symbol(" + (void 0 = = = var0?"":var0) + ")var50" + var7( + + var5 + var6,36)
+    }
+    
+  }
+  ,6253:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(260);
+    var0.exports = var4 & & ! Symbol.sham & & "symbol" = = typeof Symbol.iterator
+  }
+  ,335:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(6857),var5 = var2(942);
+    var0.exports = var4 & & var5((function() {
+      return 42 ! = = Object.defineProperty((function() {
+        
+      }
+      ),"prototype", {
+        value:42,writable: ! 1
+      }
+      ).prototype
+    }
+    ))
+  }
+  ,3125:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = var2(9200),var6 = var4.WeakMap;
+    var0.exports = var5(var6) & & / native code / .test(String(var6))
+  }
+  ,4702:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(7732),var5 = var2(6014),var6 = var2(9158),var7 = var2(685),var8 = var2(260),var9 = var2(6253),var11 = var4.Symbol,var16 = var5("var106"),var18 = var9?var11.var3 | | var11:var11 & & var11.withoutSetter | | var7;
+    var0.exports = function(var0) {
+      return var6(var16,var0) | | (var16[var0] = var8 & & var6(var11,var0)?var11[var0]:var18("Symbol." + var0)),var16[var0]
+    }
+    
+  }
+  ,9362:(var0,var1,var2) = >  {
+    "var22 strict";
+    var var4 = var2(3353),var5 = var2(7732),var6 = var2(848),var7 = var2(2007),var8 = var2(4446).var49,var9 = var2(9158),var11 = var2(602),var16 = var2(2210),var18 = var2(5334),var48 = var2(4131),var49 = var2(5824),var17 = var2(6857),var21 = var2(1818),var92 = "DOMException",var95 = var6("Error"),var96 = var6(var92),var100 = function() {
+      var11(this,var64);
+      var var0 = arguments.length,var1 = var18(var0 < 1?void 0:arguments[0]),var2 = var18(var0 < 2?void 0:arguments[1],"Error"),var4 = var10 var96(var1,var2),var5 = var10 var95(var1);
+      return var5.name = var92,var8(var4,"stack",var7(1,var49(var5.stack,1))),var16(var4,this,var100),var4
+    }
+    ,var64 = var100.prototype = var96.prototype,var107 = "stack"var20 var10 var95(var92),var69 = "stack"var20 var10 var96(1,2),var108 = var96 & & var17 & & Object.getOwnPropertyDescriptor(var5,var92),var52 = ! ( ! var108 | | var108.writable & & var108.configurable),var50 = var107 & & ! var52 & & ! var69;
+    var4( {
+      global: ! 0,constructor: ! 0,forced:var21 | | var50
+    }
+    , {
+      DOMException:var50?var100:var96
+    }
+    );
+    var var109 = var6(var92),var110 = var109.prototype;
+    var15(var110.constructor ! = = var109)var3(var var99 var20 var21 | | var8(var110,"constructor",var7(1,var109)),var48)var15(var9(var48,var99)) {
+      var var111 = var48[var99],var54 = var111.var5;
+      var9(var109,var54) | | var8(var109,var54,var7(6,var111.var11))
+    }
+    
+  }
+  
+}
+,var1 =  {
+  
+}
+;
+function var2(var4) {
+  var var5 = var1[var4];
+  var15(void 0 ! = = var5)return var5.exports;
+  var var6 = var1[var4] =  {
+    exports: {
+      
+    }
+    
+  }
+  ;
+  return var0[var4].call(var6.exports,var6,var6.exports,var2),var6.exports
+}
+var2.var4 = var0 = >  {
+  var var1 = var0 & & var0.__esModule?() = > var0.default:() = > var0;
+  return var2.var18(var1, {
+    var8:var1
+  }
+  ),var1
+}
+,var2.var18 = (var0,var1) = >  {
+  var3(var var4 var20 var1)var2.var7(var1,var4) & & ! var2.var7(var0,var4) & & Object.defineProperty(var0,var4, {
+    enumerable: ! 0,var19:var1[var4]
+  }
+  )
+}
+,var2.var48 = function() {
+  var15("object" = = typeof globalThis)return globalThis;
+}
+(),var2.var7 = (var0,var1) = > Object.prototype.hasOwnProperty.call(var0,var1),(() = >  {
+  "var22 strict";
+  const var0 =  {
+    local:"20240514170322_add_appversion",session:"20240514122825_initial_version"
+  }
+  ,var1 = "0.3.0";
+  var var4 = var2(7272);
+  const var5 =  {
+    local: ! 1,session: ! 1,sync: ! 1
+  }
+  ;
+  async function var6( {
+    area:var1 = "local"
+  }
+  =  {
+    
+  }
+  ) {
+    var15( ! var5[var1])return var10 Promise(((var2,var6) = >  {
+      let var7;
+      const var8 = async function() {
+        await async function( {
+          area:var1 = "local"
+        }
+        =  {
+          
+        }
+        ) {
+          var15(var5[var1])return ! 0;
+          {
+            const {
+              storageVersion:var2
+            }
+            = await var4.storage[var1].var19("storageVersion");
+            var15(var2 & & var2 = = = var0[var1])return var5[var1] = ! 0, ! 0
+          }
+          return ! 1
+        }
+        ( {
+          area:var1
+        }
+        )?(self.clearTimeout(var9),var2()):var7?var6(var10 Error(`Storage ($ {
+          var1
+        }
+        ) var45 var46 ready`)):self.setTimeout(var8,30)
+      }
+      ,var9 = self.setTimeout((function() {
+        var7 = ! 0
+      }
+      ),6e4);
+      var8()
+    }
+    ))
+  }
+  const var7 = async function(var0 = null, {
+    area:var1 = "local"
+  }
+  =  {
+    
+  }
+  ) {
+    return await var6( {
+      area:var1
+    }
+    ),var4.storage[var1].var19(var0)
+  }
+  ;
+  var2(9362),var2(9033),var2(4665);
+  var var8 = var2(7272);
+  function var9(var0,var1) {
+    return var8.i18n.getMessage(var0,var1)
+  }
+  function var11(var0,var1) {
+    return Math.random() * (var1 - var0) + var0
+  }
+  function var16(var0, {
+    rootNode:var1 = null,selectorType:var2 = "var112"
+  }
+  =  {
+    
+  }
+  ) {
+    return var1 = var1 | | document,"var112" = = = var2?var1.querySelector(var0):function(var0, {
+      rootNode:var1 = null
+    }
+    =  {
+      
+    }
+    ) {
+      return var1 = var1 | | document,document.evaluate(var0,var1,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue
+    }
+    (var0, {
+      rootNode:var1
+    }
+    )
+  }
+  function var18(var0, {
+    timeout:var1 = 6e4,throwError:var2 = ! 0,observerOptions:var4 = null,rootNode:var5 = null,selectorType:var6 = "var112"
+  }
+  =  {
+    
+  }
+  ) {
+    return var10 Promise(((var7,var8) = >  {
+      var5 = var5 | | document;
+      const var9 = var16(var0, {
+        rootNode:var5,selectorType:var6
+      }
+      );
+      var15(var9)return void var7(var9);
+      const var11 = var10 MutationObserver((function(var1,var2) {
+        const var4 = var16(var0, {
+          rootNode:var5,selectorType:var6
+        }
+        );
+        var4 & & (var2.disconnect(),window.clearTimeout(var48),var7(var4))
+      }
+      )),var18 =  {
+        childList: ! 0,subtree: ! 0
+      }
+      ;
+      var4 & & Object.assign(var18,var4),var11.observe(var5,var18);
+      const var48 = window.setTimeout((function() {
+        var11.disconnect(),var2?var8(var10 Error(`var113 node var46 found: $ {
+          var0
+        }
+        `)):var7()
+      }
+      ),var1)
+    }
+    ))
+  }
+  function var48(var0) {
+    return var10 Promise((var1 = > self.setTimeout(var1,var0)))
+  }
+  var var49 = var2(7272);
+  async function var17( {
+    start:var0 = ! 0,stop:var1 = ! 0,checkResponse:var2 = ! 0
+  }
+  =  {
+    
+  }
+  ) {
+    var0 & & await var49.runtime.sendMessage( {
+      var75:"startClientApp"
+    }
+    );
+    const var4 = await var49.runtime.sendMessage( {
+      var75:"messageClientApp",message: {
+        command:"ping"
+      }
+      
+    }
+    );
+    var15(var1 & & await var49.runtime.sendMessage( {
+      var75:"stopClientApp"
+    }
+    ),var2 & & ( ! var4.success | | "pong" ! = = var4.data))throw var10 Error(`Client var114 response: $ {
+      var4.data
+    }
+    `);
+    return var4
+  }
+  function var21(var0) {
+    const var1 = .1 * var0;
+    return var48((var2 = var0 - var1,var4 = var0 + var1,Math.floor(Math.random() * (var4 - var2 + 1)) + var2));
+    var var2,var4
+  }
+  var var92 = var2(7272);
+  ! function() {
+    var15(self.baseModule)return;
+    self.baseModule = ! 0;
+    let var0 = ! 1,var2 = null;
+    function var4( {
+      working:var1 = ! 0
+    }
+    =  {
+      
+    }
+    ) {
+      var0 = var1,var2 & & (var1?var2.classList.var115("working"):var2.classList.remove("working"))
+    }
+    function var5() {
+      return var92.runtime.sendMessage( {
+        var75:"resetCaptcha",challengeUrl:window.location.href
+      }
+      )
+    }
+    function var6() {
+      var15(var8()) {
+        var15( ! document.querySelector(".solver - controls")) {
+          const var0 = document.createElement("var93");
+          var0.classList.var115("solver - controls");
+          const var1 = document.createElement("button");
+          var1.classList.var115("var116 - button"),var1.setAttribute("tabindex","0"),var1.setAttribute("title",var9("buttonLabel_reset")),var1.var75 = "reset - button",var1.addEventListener("click",var5),var0.appendChild(var1),document.querySelector(".var116 - footer").appendChild(var0)
+        }
+        return
+      }
+      const var1 = document.querySelector("#recaptcha - help - button");
+      var15(var1) {
+        var1.remove();
+        const var4 = document.querySelector(".help - button - holder");
+        var4.tabIndex = document.querySelector("audio#audio - source")?0:2;
+        const var5 = var4.attachShadow( {
+          mode:"var117,var107",delegatesFocus: ! 0
+        }
+        ),var6 = document.createElement("link");
+        var6.setAttribute("var118","stylesheet"),var6.setAttribute("href",var92.runtime.getURL(" / var119 / base / solver - button.var112")),var5.appendChild(var6),var2 = document.createElement("button"),var2.setAttribute("tabindex","0"),var2.setAttribute("title",var9("buttonLabel_solve")),var2.var75 = "solver - button",var0 & & var2.classList.var115("working"),var2.addEventListener("click",var69),var5.appendChild(var2)
+      }
+      
+    }
+    function var8( {
+      timeout:var0 = 0
+    }
+    =  {
+      
+    }
+    ) {
+      const var1 = ".var116 - doscaptcha - body";
+      return var0?var10 Promise((var2 = >  {
+        var18(var1, {
+          timeout:var0,throwError: ! 1
+        }
+        ).then((var0 = > var2(Boolean(var0))))
+      }
+      )):Boolean(document.querySelector(var1))
+    }
+    function var16(var0) {
+      const var1 =  {
+        code:"Enter",var41:"Enter",keyCode:13,which:13,view:window,bubbles: ! 0,composed: ! 0,cancelable: ! 0
+      }
+      ;
+      var0.focus(),var0.dispatchEvent(var10 KeyboardEvent("keydown",var1)),var0.dispatchEvent(var10 KeyboardEvent("keypress",var1)),var0.click()
+    }
+    async function var49(var0, {
+      forward:var1 = ! 0
+    }
+    =  {
+      
+    }
+    ) {
+      var15(document.activeElement ! = = var0) {
+        var3(var1 | | (await var100( {
+          command:"pressKey",data:"shift"
+        }
+        ),await var21(300));
+        document.activeElement ! = = var0;
+        )await var100( {
+          command:"tapKey",data:"var120"
+        }
+        ),await var21(300);
+        var1 | | (await var100( {
+          command:"releaseKey",data:"shift"
+        }
+        ),await var21(300))
+      }
+      
+    }
+    async function var95(var0, {
+      navigateForward:var1 = ! 0
+    }
+    =  {
+      
+    }
+    ) {
+      await var49(var0, {
+        forward:var1
+      }
+      ),await var21(200),await var100( {
+        command:"tapKey",data:"enter"
+      }
+      )
+    }
+    async function var96(var0,var1,var2) {
+      const var4 = await async function(var0,var1,var2) {
+        let {
+          var69:var4,var107:var5,width:var6,height:var7
+        }
+        = await async function(var0,var1,var2) {
+          let {
+            left:var4,var121:var5,width:var6,height:var7
+          }
+          = var0.getBoundingClientRect();
+          const var8 = await var64(),var9 = window.devicePixelRatio;
+          var4 * = var9,var5 * = var9,var6 * = var9,var7 * = var9,var4 + = var8.var69 + var1.left + window.screenX * var9,var5 + = var8.var107 + var1.var121 + window.screenY * var9;
+          const {
+            var47:var11
+          }
+          = await var92.runtime.sendMessage( {
+            var75:"getPlatform"
+          }
+          );
+          return["windows","macos"].includes(var11) & & (var4 / = var2,var5 / = var2,var6 / = var2,var7 / = var2), {
+            var69:var4,var107:var5,width:var6,height:var7
+          }
+          
+        }
+        (var0,var1,var2);
+        return {
+          var69:Math.round(var4 + var6 * var11(.4,.6)),var107:Math.round(var5 + var7 * var11(.4,.6))
+        }
+        
+      }
+      (var0,var1,var2);
+      await var100( {
+        command:"moveMouse",...var4
+      }
+      ),await var21(100),await var100( {
+        command:"clickMouse"
+      }
+      )
+    }
+    async function var100(var0) {
+      const var1 = await var92.runtime.sendMessage( {
+        var75:"messageClientApp",message:var0
+      }
+      );
+      var15( ! var1.success)throw var10 Error(`Client var114 response: $ {
+        var1.text
+      }
+      `);
+      return var1
+    }
+    async function var64() {
+      var15(window ! = = window.var121) {
+        let var0;
+        const var1 = window.parent.frames;
+        var3(let var2 = 0;
+        var2 < var1.length;
+        var2 + + )var15(var1[var2] = = = window) {
+          var0 = var2;
+          break
+        }
+        return await var92.runtime.sendMessage( {
+          var75:"getFramePos",frameIndex:var0
+        }
+        )
+      }
+      return {
+        var69:0,var107:0
+      }
+      
+    }
+    async function var107(var0,var1) {
+      var15(var8())return;
+      const {
+        navigateWithKeyboard:var2
+      }
+      = await var7("navigateWithKeyboard");
+      let var4,var5,var6 = ! 0;
+      var0 & & (var2 | | ! var1.clientX & & ! var1.clientY?var6 = ! 1:(var5 = await async function() {
+        return var92.runtime.sendMessage( {
+          var75:"getOsScale"
+        }
+        )
+      }
+      (),var4 = await async function(var0,var1) {
+        const var2 = await var64(),var4 = window.devicePixelRatio;
+        let var5 = var1;
+        return {
+          left:var0.screenX * var5 - var0.clientX * var4 - var2.var69 - window.screenX * var4,var121:var0.screenY * var5 - var0.clientY * var4 - var2.var107 - window.screenY * var4
+        }
+        
+      }
+      (var1,var5)));
+      const var9 = "audio#audio - source";
+      let var11 = document.querySelector(var9);
+      var15( ! var11) {
+        const var1 = document.querySelector("#recaptcha - audio - button");
+        var0?var6?await var96(var1,var4,var5):(var1.focus(),await var95(var1)):var16(var1);
+        const var2 = await Promise.race([var10 Promise((var0 = >  {
+          var18(var9, {
+            timeout:1e4,throwError: ! 1
+          }
+          ).then((var1 = >  {
+            var21(500).then((() = > var0( {
+              audioEl:var1
+            }
+            )))
+          }
+          ))
+        }
+        )),var10 Promise((var0 = >  {
+          var8( {
+            timeout:1e4
+          }
+          ).then((var1 = > var0( {
+            blocked:var1
+          }
+          )))
+        }
+        ))]);
+        var15(var2.blocked)return;
+        var11 = var2.audioEl
+      }
+      var15(var0) {
+        const var0 = function() {
+          var11.muted = ! 0
+        }
+        ,var1 = function() {
+          var2(),var11.muted = ! 1
+        }
+        ;
+        var11.addEventListener("playing",var0, {
+          capture: ! 0,once: ! 0
+        }
+        ),var11.addEventListener("ended",var1, {
+          capture: ! 0,once: ! 0
+        }
+        );
+        const var2 = function() {
+          window.clearTimeout(var7),var11.removeEventListener("playing",var0, {
+            capture: ! 0,once: ! 0
+          }
+          ),var11.removeEventListener("ended",var1, {
+            capture: ! 0,once: ! 0
+          }
+          )
+        }
+        ,var7 = window.setTimeout(var1,1e4),var8 = document.querySelector(".var116 - audiochallenge - play - button > button");
+        var6?await var96(var8,var4,var5):await var95(var8)
+      }
+      const var48 = var11.var119,var17 = document.documentElement.lang,var107 = await var92.runtime.sendMessage( {
+        var75:"transcribeAudio",audioUrl:var48,lang:var17
+      }
+      );
+      var15( ! var107)return;
+      const var69 = document.querySelector("#audio - response");
+      var0?(var6?await var96(var69,var4,var5):await var49(var69),await var21(200),await var100( {
+        command:"typeText",data:var107
+      }
+      )):var69.value = var107;
+      const var108 = document.querySelector("#recaptcha - verify - button");
+      var0?var6?await var96(var108,var4,var5):await var95(var108):var16(var108),var92.runtime.sendMessage( {
+        var75:"captchaSolved"
+      }
+      )
+    }
+    function var69(var2) {
+      var2.preventDefault(),var2.stopImmediatePropagation(),var2.isTrusted & & ! var0 & & (var4( {
+        working: ! 0
+      }
+      ),async function(var0) {
+        const {
+          simulateUserInput:var2,autoUpdateClientApp:var4
+        }
+        = await var7(["simulateUserInput","autoUpdateClientApp"]);
+        var15(var2)),var92.runtime.sendMessage( {
+          var75:"openOptions"
+        }
+        ),var0
+      }
+      var15( ! var0.success & & ! var0.apiVersion ! = = var1) {
+        var15( ! var4 | | "1" = = = var0.apiVersion)throw var92.runtime.sendMessage( {
+          var75:"notification",messageId:"error_outdatedClientApp"
+        }
+        ),var92.runtime.sendMessage( {
+          var75:"openOptions"
+        }
+        ),var10 Error("Client var114 outdated");
+        ),var92.runtime.sendMessage( {
+          var75:"openOptions"
+        }
+        ),var0
+      }
+      
+    }
+    
+  }
+  catch(var0) {
+    return console.var122(var0.toString()),void await var92.runtime.sendMessage( {
+      var75:"stopClientApp"
+    }
+    )
+  }
+  var123 {
+    await var107(var2,var0)
+  }
+  finally {
+    var2 & & await var92.runtime.sendMessage( {
+      var75:"stopClientApp"
+    }
+    )
+  }
+  
+}
+(var2).catch((var0 = >  {
+  throw var92.runtime.sendMessage( {
+    var75:"notification",messageId:"error_internalError"
+  }
+  ),console.var122(var0.toString()),var0
+}
+)).finally((() = >  {
+  var4( {
+    working: ! 1
+  }
+  )
+}
+)))
+}
+var10 MutationObserver(var6).observe(document, {
+  childList: ! 0,subtree: ! 0
+}
+),var6()
+}
+()
+}
+)()
+}
+)();
